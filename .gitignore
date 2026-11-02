@@ -1,0 +1,46 @@
+
+# ============================================
+# STRATUM - Git Ignore Configuration
+# ============================================
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter notebook temporary files
+.ipynb_checkpoints/
+
+# Original and processed datasets
+data/raw/*.csv
+data/processed/*
+!data/processed/.gitkeep
+
+# Model artifacts
+*.joblib
+*.pkl
+
+# Secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# Application logs
+*.log
+logs/
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+build/
+
+# IDE and operating system files
+.DS_Store
+Thumbs.db
