@@ -44,3 +44,7 @@ build/
 # IDE and operating system files
 .DS_Store
 Thumbs.db
+
+
+# VS Code workspace settings
+.vscode/
