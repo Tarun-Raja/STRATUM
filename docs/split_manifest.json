@@ -1,0 +1,35 @@
+{
+    "project": "STRATUM",
+    "dataset_version": "Infineon AlCu v2",
+    "source_file": "apc_spc_AlCu_inputs_outputs.csv",
+    "method": "chronological_lot_aware",
+    "test_fraction": 0.2,
+    "validation_fraction_of_development": 0.2,
+    "ordering": [
+        "runstart",
+        "wafer_id"
+    ],
+    "boundary_policy": "purge_earlier_overlapping_lots",
+    "targets": [
+        "mean_thickness",
+        "mean_resistance"
+    ],
+    "numeric_apc_feature_count": 110,
+    "categorical_features": [
+        "equipment"
+    ],
+    "split_summary": {
+        "total_records": 5208,
+        "train_records": 3331,
+        "validation_records": 834,
+        "test_records": 1042,
+        "purged_development_records": 0,
+        "purged_training_records": 1,
+        "train_start": "2021-07-31 06:51:54",
+        "train_end": "2023-12-26 05:13:18",
+        "validation_start": "2023-12-26 08:01:03",
+        "validation_end": "2024-07-31 13:58:35",
+        "test_start": "2024-07-31 17:05:11",
+        "test_end": "2025-05-31 17:04:14"
+    }
+}
