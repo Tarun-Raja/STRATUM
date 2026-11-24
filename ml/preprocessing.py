@@ -11,8 +11,10 @@ The preprocessing pipeline must only be fitted after the training/test split.
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder
-
+from sklearn.preprocessing import (
+    OneHotEncoder,
+    StandardScaler,
+)
 
 # --------------------------------------------
 # 1. Dataset metadata
@@ -143,66 +145,92 @@ def get_feature_columns(df):
 # 5. Reusable preprocessing pipeline
 # --------------------------------------------
 
-def build_preprocessor(numeric_features):
+
+def build_preprocessor(
+    numeric_features,
+    include_equipment=True,
+    scale_numeric=False,
+):
     """
-    Construct an unfitted preprocessing pipeline.
+    Construct an unfitted STRATUM preprocessing pipeline.
 
-    Numerical inputs:
-    - Median imputation
-    - Missing-value indicator columns
+    Parameters
+    ----------
+    numeric_features:
+        Numeric APC input column names.
 
-    Categorical equipment identifier:
-    - Most-frequent imputation
-    - One-hot encoding
+    include_equipment:
+        Include one-hot encoded equipment metadata.
 
-    All learned preprocessing parameters must be
-    fitted using training data only.
+    scale_numeric:
+        Standardise the imputed numeric feature matrix,
+        including missingness indicators.
+
+    All learned transformations must be fitted using
+    training data only.
     """
+
+    numeric_steps = [
+        (
+            "imputer",
+            SimpleImputer(
+                strategy="median",
+                add_indicator=True,
+                keep_empty_features=True,
+            ),
+        ),
+    ]
+
+    if scale_numeric:
+        numeric_steps.append(
+            (
+                "scaler",
+                StandardScaler(),
+            )
+        )
 
     numeric_pipeline = Pipeline(
-        steps=[
-            (
-                "imputer",
-                SimpleImputer(
-                    strategy="median",
-                    add_indicator=True,
-                    keep_empty_features=True,
-                ),
-            ),
-        ]
+        steps=numeric_steps
     )
 
-    categorical_pipeline = Pipeline(
-        steps=[
-            (
-                "imputer",
-                SimpleImputer(
-                    strategy="most_frequent",
-                ),
-            ),
-            (
-                "encoder",
-                OneHotEncoder(
-                    handle_unknown="ignore",
-                    sparse_output=False,
-                ),
-            ),
-        ]
-    )
+    transformers = [
+        (
+            "numeric",
+            numeric_pipeline,
+            numeric_features,
+        ),
+    ]
 
-    preprocessor = ColumnTransformer(
-        transformers=[
-            (
-                "numeric",
-                numeric_pipeline,
-                numeric_features,
-            ),
+    if include_equipment:
+
+        categorical_pipeline = Pipeline(
+            steps=[
+                (
+                    "imputer",
+                    SimpleImputer(
+                        strategy="most_frequent",
+                    ),
+                ),
+                (
+                    "encoder",
+                    OneHotEncoder(
+                        handle_unknown="ignore",
+                        sparse_output=False,
+                    ),
+                ),
+            ]
+        )
+
+        transformers.append(
             (
                 "equipment",
                 categorical_pipeline,
                 CATEGORICAL_FEATURES,
-            ),
-        ],
+            )
+        )
+
+    preprocessor = ColumnTransformer(
+        transformers=transformers,
         remainder="drop",
         sparse_threshold=0,
     )
