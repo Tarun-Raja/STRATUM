@@ -1,0 +1,41 @@
+{
+    "project": "STRATUM",
+    "experiment": "thickness_baseline_regression",
+    "target": "mean_thickness",
+    "dataset_sha256": "32af2d4508da45b0c7235db7b6923f3e1b19729d91e3b593a0d0135eba6a74b1",
+    "evaluation_partition": "validation",
+    "training_records": 3331,
+    "validation_records": 834,
+    "primary_metric": "MAE",
+    "best_baseline": "Equipment Mean",
+    "best_baseline_mae": 1.9954786118972963,
+    "results": [
+        {
+            "Model": "Equipment Mean",
+            "MAE": 1.9954786118972963,
+            "RMSE": 2.444380493376558,
+            "R2": -0.0015961721082189406,
+            "MAPE (%)": 1.3208417412089408,
+            "Bias": 0.6644471660392198,
+            "MAE Improvement (%)": 3.0611787641579844
+        },
+        {
+            "Model": "Global Mean",
+            "MAE": 2.0584927549743,
+            "RMSE": 2.537936046250082,
+            "R2": -0.079733026404466,
+            "MAPE (%)": 1.363356755463455,
+            "Bias": 0.6896704298310999,
+            "MAE Improvement (%)": 0.0
+        },
+        {
+            "Model": "Global Median",
+            "MAE": 2.075573009632131,
+            "RMSE": 2.560923996471058,
+            "R2": -0.09938148005794667,
+            "MAPE (%)": 1.3752873562211587,
+            "Bias": 0.7699724947225126,
+            "MAE Improvement (%)": -0.829745677586514
+        }
+    ]
+}
