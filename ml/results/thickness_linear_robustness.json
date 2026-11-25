@@ -1,0 +1,81 @@
+{
+    "project": "STRATUM",
+    "experiment": "thickness_linear_robustness",
+    "target": "mean_thickness",
+    "dataset_sha256": "32af2d4508da45b0c7235db7b6923f3e1b19729d91e3b593a0d0135eba6a74b1",
+    "evaluation_partition": "validation",
+    "training_records": 3331,
+    "validation_records": 834,
+    "reference_baseline_mae": 1.9954786118972963,
+    "algorithm": "Ridge Regression",
+    "configuration": "APC + Equipment",
+    "alpha": 10,
+    "original_problem_records": 2,
+    "original_problem_squared_error_pct": 98.59438497823356,
+    "clip_bounds": [
+        null,
+        5,
+        8,
+        10
+    ],
+    "best_model": "Ridge Clip \u00b15",
+    "best_clip_bound": 5.0,
+    "best_model_mae": 1.2677876572335938,
+    "best_model_rmse": 1.6731374588705812,
+    "best_model_r2": 0.530734871699093,
+    "sensor_ood_warning_count": 661,
+    "results": [
+        {
+            "Model": "Ridge Clip \u00b15",
+            "Alpha": 10,
+            "Clip Bound": 5.0,
+            "MAE": 1.2677876572335938,
+            "RMSE": 1.6731374588705812,
+            "R2": 0.530734871699093,
+            "MAPE (%)": 0.834860458505457,
+            "Bias": -0.12132485816244729,
+            "Non-Positive Predictions": 0,
+            "Maximum Absolute Error": 10.314964351864234,
+            "MAE Improvement (%)": 36.4669884370154
+        },
+        {
+            "Model": "Ridge Clip \u00b18",
+            "Alpha": 10,
+            "Clip Bound": 8.0,
+            "MAE": 1.2774954610300133,
+            "RMSE": 1.7128295310813264,
+            "R2": 0.5082058916679788,
+            "MAPE (%)": 0.8413212591752518,
+            "Bias": -0.13466517431822664,
+            "Non-Positive Predictions": 0,
+            "Maximum Absolute Error": 12.291060781428627,
+            "MAE Improvement (%)": 35.98049844215701
+        },
+        {
+            "Model": "Ridge Clip \u00b110",
+            "Alpha": 10,
+            "Clip Bound": 10.0,
+            "MAE": 1.2874445779105086,
+            "RMSE": 1.7452627082618626,
+            "R2": 0.4894048849195751,
+            "MAPE (%)": 0.8479228082784165,
+            "Bias": -0.15035697132683978,
+            "Non-Positive Predictions": 0,
+            "Maximum Absolute Error": 12.562335063070407,
+            "MAE Improvement (%)": 35.481915454538026
+        },
+        {
+            "Model": "Original Ridge",
+            "Alpha": 10,
+            "Clip Bound": null,
+            "MAE": 1.9399496291030816,
+            "RMSE": 13.921624264560553,
+            "R2": -31.488888525802025,
+            "MAPE (%)": 1.2859256647063415,
+            "Bias": -0.8430213438081237,
+            "Non-Positive Predictions": 2,
+            "Maximum Absolute Error": 282.89324055673575,
+            "MAE Improvement (%)": 2.7827400636190167
+        }
+    ]
+}

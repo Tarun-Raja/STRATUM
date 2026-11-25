@@ -11,9 +11,12 @@ The preprocessing pipeline must only be fitted after the training/test split.
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
+import numpy as np
+
 from sklearn.preprocessing import (
     OneHotEncoder,
     StandardScaler,
+    FunctionTransformer,
 )
 
 # --------------------------------------------
@@ -150,6 +153,7 @@ def build_preprocessor(
     numeric_features,
     include_equipment=True,
     scale_numeric=False,
+    clip_z=None,
 ):
     """
     Construct an unfitted STRATUM preprocessing pipeline.
@@ -188,6 +192,35 @@ def build_preprocessor(
                 StandardScaler(),
             )
         )
+        
+    
+    # Optional bounded standardisation
+    if clip_z is not None:
+
+        if not scale_numeric:
+            raise ValueError(
+                "clip_z requires numeric standardisation."
+            )
+
+        if not np.isfinite(clip_z) or clip_z <= 0:
+            raise ValueError(
+                "clip_z must be finite and positive."
+            )
+
+        numeric_steps.append(
+            (
+                "bounded_scaling",
+                FunctionTransformer(
+                    np.clip,
+                    kw_args={
+                        "a_min": -float(clip_z),
+                        "a_max": float(clip_z),
+                    },
+                    feature_names_out="one-to-one",
+                ),
+            )
+        )
+
 
     numeric_pipeline = Pipeline(
         steps=numeric_steps

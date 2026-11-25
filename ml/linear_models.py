@@ -31,6 +31,7 @@ def build_linear_model(
     model_type="linear",
     include_equipment=True,
     alpha=1.0,
+    clip_z=None,
 ):
     """
     Build an unfitted regression pipeline.
@@ -55,10 +56,11 @@ def build_linear_model(
     """
 
     preprocessor = build_preprocessor(
-        numeric_features=numeric_features,
-        include_equipment=include_equipment,
-        scale_numeric=True,
-    )
+    numeric_features=numeric_features,
+    include_equipment=include_equipment,
+    scale_numeric=True,
+    clip_z=clip_z,
+)
 
     if model_type == "linear":
 
