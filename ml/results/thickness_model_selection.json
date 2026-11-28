@@ -1,0 +1,53 @@
+{
+    "project": "STRATUM",
+    "target": "mean_thickness",
+    "dataset_sha256": "32af2d4508da45b0c7235db7b6923f3e1b19729d91e3b593a0d0135eba6a74b1",
+    "selection_partition": "original_training_chronological_cv",
+    "primary_metric": "Mean CV MAE",
+    "selection_policy": "Minimum eligible mean chronological CV MAE",
+    "compact_mae_tolerance": 0.01,
+    "boosting_round_policy": "Median internally selected CV boosting rounds",
+    "selected_candidate": {
+        "name": "XGB-4",
+        "algorithm": "XGBoost",
+        "include_equipment": false,
+        "parameters": {
+            "missing_strategy": "median",
+            "max_depth": 4,
+            "learning_rate": 0.025,
+            "n_estimators": 820,
+            "min_child_weight": 5,
+            "reg_alpha": 0.1,
+            "reg_lambda": 5.0,
+            "subsample": 0.8,
+            "colsample_bytree": 0.8,
+            "gamma": 0.0,
+            "random_state": 42
+        }
+    },
+    "compact_candidate": {
+        "name": "XGB-9",
+        "algorithm": "XGBoost",
+        "include_equipment": true,
+        "parameters": {
+            "missing_strategy": "median",
+            "max_depth": 5,
+            "learning_rate": 0.05,
+            "n_estimators": 288,
+            "min_child_weight": 5,
+            "reg_alpha": 0.1,
+            "reg_lambda": 5.0,
+            "subsample": 0.8,
+            "colsample_bytree": 0.8,
+            "gamma": 0.0,
+            "random_state": 42
+        }
+    },
+    "selected_mean_cv_mae": 1.2092899217275688,
+    "selected_std_cv_mae": 0.12358124496079956,
+    "compact_mean_cv_mae": 1.2143564240235187,
+    "compact_mae_increase_pct": 0.41896506411895906,
+    "compact_size_reduction_pct": 48.678697261490754,
+    "baseline_mean_cv_mae": 1.9651143736185213,
+    "cv_folds": 5
+}
