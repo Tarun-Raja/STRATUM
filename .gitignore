@@ -48,3 +48,7 @@ Thumbs.db
 
 # VS Code workspace settings
 .vscode/
+
+# Locally generated fitted model artifacts
+ml/artifacts/*
+!ml/artifacts/.gitkeep

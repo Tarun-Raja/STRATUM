@@ -1,0 +1,1861 @@
+{
+    "project": "STRATUM",
+    "experiment": "model_serialization_and_inference",
+    "model_version": "1.0.0",
+    "dataset_sha256": "32af2d4508da45b0c7235db7b6923f3e1b19729d91e3b593a0d0135eba6a74b1",
+    "partition_summary": {
+        "original_training_records": 3331,
+        "original_validation_records": 834,
+        "combined_development_records": 4165,
+        "additional_purged_records": 0,
+        "eligible_development_records": 4165,
+        "final_test_records": 1042,
+        "development_lots": 2361,
+        "final_test_lots": 590,
+        "development_batches": 4165,
+        "final_test_batches": 1042,
+        "development_start": "2021-07-31 06:51:54",
+        "development_end": "2024-07-31 13:58:35",
+        "final_test_start": "2024-07-31 17:05:11",
+        "final_test_end": "2025-05-31 17:04:14",
+        "development_population_sha256": "42c3b7f4fce9c57743b3abf78b64f34582decb131d72e70a017d6e5bef0f6f7d",
+        "test_population_sha256": "38462362df82611e0671347035e6888c60ee8c5e6f25b42b0bfa70410cfd882f"
+    },
+    "model_configurations": {
+        "mean_thickness": {
+            "name": "XGB-4",
+            "algorithm": "XGBoost",
+            "include_equipment": false,
+            "parameters": {
+                "missing_strategy": "median",
+                "max_depth": 4,
+                "learning_rate": 0.025,
+                "n_estimators": 820,
+                "min_child_weight": 5,
+                "reg_alpha": 0.1,
+                "reg_lambda": 5.0,
+                "subsample": 0.8,
+                "colsample_bytree": 0.8,
+                "gamma": 0.0,
+                "random_state": 42
+            }
+        },
+        "mean_resistance": {
+            "name": "RES-XGB-2",
+            "algorithm": "XGBoost",
+            "include_equipment": true,
+            "parameters": {
+                "missing_strategy": "median",
+                "max_depth": 4,
+                "learning_rate": 0.025,
+                "n_estimators": 837,
+                "min_child_weight": 5,
+                "reg_alpha": 0.1,
+                "reg_lambda": 5.0,
+                "subsample": 0.8,
+                "colsample_bytree": 0.8,
+                "gamma": 0.0,
+                "random_state": 42
+            }
+        }
+    },
+    "runtime_versions": {
+        "python": "3.14.3",
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.1",
+        "xgboost": "3.4.1",
+        "joblib": "1.6.0"
+    },
+    "model_n_jobs": -1,
+    "random_state": 42,
+    "artifact_manifest": {
+        "project": "STRATUM",
+        "model_version": "1.0.0",
+        "checksum_algorithm": "SHA256",
+        "files": {
+            "evaluation.json": "88064998917147ca601b22dfaacdc9249a2b8daecd4c66bd5731b9605db0181c",
+            "global_explainability.json": "28f4ca0d743f0bc8f0fed34e3a5c0824db07a29967519400c6971c48b7612558",
+            "input_schema.json": "f4cd47c569c4e26141aa3cebebc0f546c749cd2dcc96d7898e40e7456e2fbf21",
+            "input_warning_profile.json": "1615eb1170e9155d1bbe4e94a9753da3d975905e36c18573485f5e6755bf8a92",
+            "metadata.json": "af7769f1d0d016d7976a4c4dbb40f0ee665c10e6c7150fab589a1eacf7eeac12",
+            "resistance.joblib": "d1383ce1c760efea0a67d97eb4c18d9b70c55fd5aa3b842ed8a9f95d11281102",
+            "thickness.joblib": "8f857ecc4e8ee3c8ec5596773685383baabafbed02dda6fade9949ebba74abe0"
+        }
+    },
+    "artifact_summary": [
+        {
+            "Artifact": "evaluation.json",
+            "Bytes": 140794,
+            "Size (KiB)": 137.494140625,
+            "SHA256": "88064998917147ca601b22dfaacdc9249a2b8daecd4c66bd5731b9605db0181c",
+            "Verified": true
+        },
+        {
+            "Artifact": "global_explainability.json",
+            "Bytes": 69878,
+            "Size (KiB)": 68.240234375,
+            "SHA256": "28f4ca0d743f0bc8f0fed34e3a5c0824db07a29967519400c6971c48b7612558",
+            "Verified": true
+        },
+        {
+            "Artifact": "input_schema.json",
+            "Bytes": 36107,
+            "Size (KiB)": 35.2607421875,
+            "SHA256": "f4cd47c569c4e26141aa3cebebc0f546c749cd2dcc96d7898e40e7456e2fbf21",
+            "Verified": true
+        },
+        {
+            "Artifact": "input_warning_profile.json",
+            "Bytes": 24096,
+            "Size (KiB)": 23.53125,
+            "SHA256": "1615eb1170e9155d1bbe4e94a9753da3d975905e36c18573485f5e6755bf8a92",
+            "Verified": true
+        },
+        {
+            "Artifact": "metadata.json",
+            "Bytes": 5213,
+            "Size (KiB)": 5.0908203125,
+            "SHA256": "af7769f1d0d016d7976a4c4dbb40f0ee665c10e6c7150fab589a1eacf7eeac12",
+            "Verified": true
+        },
+        {
+            "Artifact": "resistance.joblib",
+            "Bytes": 339373,
+            "Size (KiB)": 331.4189453125,
+            "SHA256": "d1383ce1c760efea0a67d97eb4c18d9b70c55fd5aa3b842ed8a9f95d11281102",
+            "Verified": true
+        },
+        {
+            "Artifact": "thickness.joblib",
+            "Bytes": 333304,
+            "Size (KiB)": 325.4921875,
+            "SHA256": "8f857ecc4e8ee3c8ec5596773685383baabafbed02dda6fade9949ebba74abe0",
+            "Verified": true
+        }
+    ],
+    "bundle_size_bytes": 949583,
+    "fitting_summary": [
+        {
+            "Target": "mean_thickness",
+            "Candidate": "XGB-4",
+            "Development Records": 4165,
+            "Raw Features": 110,
+            "Transformed Features": 157,
+            "Boosting Rounds": 820,
+            "Target Mean": 0.0,
+            "Target Scale": 1.0,
+            "Training Time (s)": 4.086393699995824
+        },
+        {
+            "Target": "mean_resistance",
+            "Candidate": "RES-XGB-2",
+            "Development Records": 4165,
+            "Raw Features": 111,
+            "Transformed Features": 173,
+            "Boosting Rounds": 837,
+            "Target Mean": 0.002897853372709674,
+            "Target Scale": 5.352031605994806e-05,
+            "Training Time (s)": 4.218399999997928
+        }
+    ],
+    "metric_reproduction": [
+        {
+            "Target": "mean_thickness",
+            "Candidate": "XGB-4",
+            "MAE": 1.1935546087907907,
+            "RMSE": 1.5554220973663535,
+            "R2": 0.5839070531214829,
+            "MAPE (%)": 0.7861786268677532,
+            "Bias": -0.03479677441917672,
+            "Reference MAE": 1.1935546087907907,
+            "MAE Difference": 0.0,
+            "Reference R2": 0.5839070531214829,
+            "R2 Difference": 0.0,
+            "Passed": true
+        },
+        {
+            "Target": "mean_resistance",
+            "Candidate": "RES-XGB-2",
+            "MAE": 2.4237906652058367e-05,
+            "RMSE": 3.2328871924355e-05,
+            "R2": 0.5701504703401694,
+            "MAPE (%)": 0.8362032646051081,
+            "Bias": 6.615650541186738e-06,
+            "Reference MAE": 2.4237906652058367e-05,
+            "MAE Difference": 0.0,
+            "Reference R2": 0.5701504703401694,
+            "R2 Difference": 0.0,
+            "Passed": true
+        }
+    ],
+    "serialization_roundtrip": [
+        {
+            "Target": "mean_thickness",
+            "Verified Predictions": 1042,
+            "Maximum Prediction Difference": 0.0,
+            "Exact Prediction Match": true
+        },
+        {
+            "Target": "mean_resistance",
+            "Verified Predictions": 1042,
+            "Maximum Prediction Difference": 0.0,
+            "Exact Prediction Match": true
+        }
+    ],
+    "batch_inference_verification": [
+        {
+            "Target": "mean_thickness",
+            "Records": 1042,
+            "Maximum Difference": 0.0,
+            "Exact Prediction Match": true
+        },
+        {
+            "Target": "mean_resistance",
+            "Records": 1042,
+            "Maximum Difference": 0.0,
+            "Exact Prediction Match": true
+        }
+    ],
+    "warning_reproduction": [
+        {
+            "Warning": "Elevated Missingness",
+            "Inference Count": 0,
+            "Reference Count": 0,
+            "Passed": true
+        },
+        {
+            "Warning": "Extreme Sensor Warning",
+            "Inference Count": 73,
+            "Reference Count": 73,
+            "Passed": true
+        },
+        {
+            "Warning": "Unknown Equipment",
+            "Inference Count": 0,
+            "Reference Count": 0,
+            "Passed": true
+        },
+        {
+            "Warning": "Missing Equipment",
+            "Inference Count": 0,
+            "Reference Count": 0,
+            "Passed": true
+        }
+    ],
+    "robustness_summary": [
+        {
+            "Scenario": "Ordinary Input",
+            "Expected": "Accept",
+            "Actual": "Accept",
+            "Warnings": "ELEVATED_MISSINGNESS, EXTREME_SENSOR_VALUES",
+            "Error": null,
+            "Passed": true
+        },
+        {
+            "Scenario": "Additional Missing Sensors",
+            "Expected": "Accept",
+            "Actual": "Accept",
+            "Warnings": "ELEVATED_MISSINGNESS, EXTREME_SENSOR_VALUES",
+            "Error": null,
+            "Passed": true
+        },
+        {
+            "Scenario": "Unknown Equipment",
+            "Expected": "Accept",
+            "Actual": "Accept",
+            "Warnings": "ELEVATED_MISSINGNESS, EXTREME_SENSOR_VALUES, UNKNOWN_EQUIPMENT",
+            "Error": null,
+            "Passed": true
+        },
+        {
+            "Scenario": "Missing Equipment",
+            "Expected": "Accept",
+            "Actual": "Accept",
+            "Warnings": "ELEVATED_MISSINGNESS, EXTREME_SENSOR_VALUES, MISSING_EQUIPMENT",
+            "Error": null,
+            "Passed": true
+        },
+        {
+            "Scenario": "Extreme Sensor",
+            "Expected": "Accept",
+            "Actual": "Accept",
+            "Warnings": "ELEVATED_MISSINGNESS, EXTREME_SENSOR_VALUES",
+            "Error": null,
+            "Passed": true
+        },
+        {
+            "Scenario": "Elevated Missingness",
+            "Expected": "Accept",
+            "Actual": "Accept",
+            "Warnings": "ELEVATED_MISSINGNESS",
+            "Error": null,
+            "Passed": true
+        },
+        {
+            "Scenario": "Missing Required Column",
+            "Expected": "Reject",
+            "Actual": "Reject",
+            "Warnings": null,
+            "Error": "Missing required columns: ['AMPS_TARGET_20_90_DELTA_DEP1']",
+            "Passed": true
+        },
+        {
+            "Scenario": "Invalid Numeric Value",
+            "Expected": "Reject",
+            "Actual": "Reject",
+            "Warnings": null,
+            "Error": "Non-numeric value in AMPS_TARGET_20_90_DELTA_DEP1, row 0.",
+            "Passed": true
+        },
+        {
+            "Scenario": "Numeric String",
+            "Expected": "Reject",
+            "Actual": "Reject",
+            "Warnings": null,
+            "Error": "Non-numeric value in AMPS_TARGET_20_90_DELTA_DEP1, row 0.",
+            "Passed": true
+        },
+        {
+            "Scenario": "Boolean Sensor Value",
+            "Expected": "Reject",
+            "Actual": "Reject",
+            "Warnings": null,
+            "Error": "Boolean value in AMPS_TARGET_20_90_DELTA_DEP1, row 0.",
+            "Passed": true
+        },
+        {
+            "Scenario": "Infinite Sensor Value",
+            "Expected": "Reject",
+            "Actual": "Reject",
+            "Warnings": null,
+            "Error": "Infinite value in AMPS_TARGET_20_90_DELTA_DEP1, row 0.",
+            "Passed": true
+        },
+        {
+            "Scenario": "All APC Measurements Missing",
+            "Expected": "Reject",
+            "Actual": "Reject",
+            "Warnings": null,
+            "Error": "All APC measurements are missing for rows: [0]",
+            "Passed": true
+        },
+        {
+            "Scenario": "Unexpected Measured Target",
+            "Expected": "Reject",
+            "Actual": "Reject",
+            "Warnings": null,
+            "Error": "Unexpected input columns: ['mean_thickness']",
+            "Passed": true
+        }
+    ],
+    "local_explanation_verification": [
+        {
+            "Target": "mean_thickness",
+            "Base Prediction": 152.19647216796875,
+            "Prediction": 152.1706085205078,
+            "Reconstructed Prediction": 152.17085101665361,
+            "Reconstruction Error": 0.00024249614580185153,
+            "Top Features": 10
+        },
+        {
+            "Target": "mean_resistance",
+            "Base Prediction": 0.0028978352255316967,
+            "Prediction": 0.002884051762521267,
+            "Reconstructed Prediction": 0.002884051831190263,
+            "Reconstruction Error": 6.866899627047673e-11,
+            "Top Features": 10
+        }
+    ],
+    "explanation_robustness": [
+        {
+            "Scenario": "Ordinary Input",
+            "Target": "mean_thickness",
+            "Prediction": 152.1706085205078,
+            "Reconstruction Error": 0.00024249614580185153,
+            "Passed": true
+        },
+        {
+            "Scenario": "Ordinary Input",
+            "Target": "mean_resistance",
+            "Prediction": 0.002884051762521267,
+            "Reconstruction Error": 6.866899627047673e-11,
+            "Passed": true
+        },
+        {
+            "Scenario": "Additional Missing Sensors",
+            "Target": "mean_thickness",
+            "Prediction": 151.4430694580078,
+            "Reconstruction Error": 0.0002344603453821037,
+            "Passed": true
+        },
+        {
+            "Scenario": "Additional Missing Sensors",
+            "Target": "mean_resistance",
+            "Prediction": 0.002889515832066536,
+            "Reconstruction Error": 2.0265249547901654e-10,
+            "Passed": true
+        },
+        {
+            "Scenario": "Unknown Equipment",
+            "Target": "mean_thickness",
+            "Prediction": 152.1706085205078,
+            "Reconstruction Error": 0.00024249614580185153,
+            "Passed": true
+        },
+        {
+            "Scenario": "Unknown Equipment",
+            "Target": "mean_resistance",
+            "Prediction": 0.0028828869108110666,
+            "Reconstruction Error": 1.9645560742423407e-10,
+            "Passed": true
+        },
+        {
+            "Scenario": "Missing Equipment",
+            "Target": "mean_thickness",
+            "Prediction": 152.1706085205078,
+            "Reconstruction Error": 0.00024249614580185153,
+            "Passed": true
+        },
+        {
+            "Scenario": "Missing Equipment",
+            "Target": "mean_resistance",
+            "Prediction": 0.0028827907517552376,
+            "Reconstruction Error": 4.557448168851508e-11,
+            "Passed": true
+        }
+    ],
+    "global_explainability": {
+        "project": "STRATUM",
+        "model_version": "1.0.0",
+        "dataset_sha256": "32af2d4508da45b0c7235db7b6923f3e1b19729d91e3b593a0d0135eba6a74b1",
+        "development_population_sha256": "42c3b7f4fce9c57743b3abf78b64f34582decb131d72e70a017d6e5bef0f6f7d",
+        "explanation_population": "eligible_combined_development",
+        "records": 4165,
+        "method": "Native XGBoost TreeSHAP",
+        "interpretation_warning": "Feature attribution describes fitted model behaviour, not physical causality.",
+        "targets": {
+            "mean_thickness": {
+                "candidate": "XGB-4",
+                "records": 4165,
+                "raw_input_groups": 110,
+                "transformed_features": 157,
+                "mean_base_prediction": 152.19647216796875,
+                "maximum_reconstruction_error": 0.0004846110041398788,
+                "mean_reconstruction_error": 0.0001572469665827849,
+                "calculation_seconds": 0.986020099997404,
+                "global_importance": [
+                    {
+                        "Feature": "T_DEP1_PROCESS",
+                        "Mean Absolute Contribution": 0.7324053797185903,
+                        "Mean Signed Contribution": 0.0534103552909951,
+                        "Relative Importance (%)": 13.032520326685933
+                    },
+                    {
+                        "Feature": "T_RECIPE_ENG",
+                        "Mean Absolute Contribution": 0.6103469045409822,
+                        "Mean Signed Contribution": 0.003340546342642505,
+                        "Relative Importance (%)": 10.860595320608466
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_DEP1_S",
+                        "Mean Absolute Contribution": 0.29172917134473003,
+                        "Mean Signed Contribution": 0.03382885782011071,
+                        "Relative Importance (%)": 5.191068308234239
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_DEP1_A",
+                        "Mean Absolute Contribution": 0.2595669991994726,
+                        "Mean Signed Contribution": -0.032388786346643786,
+                        "Relative Importance (%)": 4.618770269688305
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 0.23739092368564074,
+                        "Mean Signed Contribution": 0.0003976623871640972,
+                        "Relative Importance (%)": 4.224166184432702
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_RE_A",
+                        "Mean Absolute Contribution": 0.17242157753915927,
+                        "Mean Signed Contribution": 0.029455752109578084,
+                        "Relative Importance (%)": 3.0680928571302126
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_SPS_X",
+                        "Mean Absolute Contribution": 0.16367921978171307,
+                        "Mean Signed Contribution": 0.02452115127629875,
+                        "Relative Importance (%)": 2.9125301614809063
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_A",
+                        "Mean Absolute Contribution": 0.1527033186604513,
+                        "Mean Signed Contribution": -0.03734605333241377,
+                        "Relative Importance (%)": 2.7172234933055575
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_I",
+                        "Mean Absolute Contribution": 0.14821983951909146,
+                        "Mean Signed Contribution": -0.033620554250922856,
+                        "Relative Importance (%)": 2.637443859427806
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 0.1344144658526542,
+                        "Mean Signed Contribution": -0.025971391795053273,
+                        "Relative Importance (%)": 2.391789174320949
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_X",
+                        "Mean Absolute Contribution": 0.11495309636994105,
+                        "Mean Signed Contribution": 0.0029313857214903235,
+                        "Relative Importance (%)": 2.045490935132624
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_RECIPE_A",
+                        "Mean Absolute Contribution": 0.10232109584315095,
+                        "Mean Signed Contribution": 0.012552966142608812,
+                        "Relative Importance (%)": 1.8207154102786787
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_SPS_DEP1_A",
+                        "Mean Absolute Contribution": 0.10017965762685349,
+                        "Mean Signed Contribution": 0.019258238382593898,
+                        "Relative Importance (%)": 1.7826103691975195
+                    },
+                    {
+                        "Feature": "POWER_TARGET_SPS_DEP1_A",
+                        "Mean Absolute Contribution": 0.09401293134968126,
+                        "Mean Signed Contribution": 0.0029099674226436933,
+                        "Relative Importance (%)": 1.6728788082589108
+                    },
+                    {
+                        "Feature": "OHM_TARGET_DEP1_A_A",
+                        "Mean Absolute Contribution": 0.08594885211005261,
+                        "Mean Signed Contribution": -0.014344177730264095,
+                        "Relative Importance (%)": 1.5293854922392403
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_SPS_DEP1_S",
+                        "Mean Absolute Contribution": 0.07682716359709915,
+                        "Mean Signed Contribution": 0.0023857321400992796,
+                        "Relative Importance (%)": 1.3670729338519167
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_X",
+                        "Mean Absolute Contribution": 0.07586031865592267,
+                        "Mean Signed Contribution": -0.0032455565878494763,
+                        "Relative Importance (%)": 1.3498687642792173
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_M",
+                        "Mean Absolute Contribution": 0.075823615938576,
+                        "Mean Signed Contribution": -0.0024176658869923357,
+                        "Relative Importance (%)": 1.3492156711656074
+                    },
+                    {
+                        "Feature": "T_DEP1_PROCESS_MR",
+                        "Mean Absolute Contribution": 0.0747475268503703,
+                        "Mean Signed Contribution": 0.0031464642979463584,
+                        "Relative Importance (%)": 1.3300675964740283
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_M",
+                        "Mean Absolute Contribution": 0.07411712617669276,
+                        "Mean Signed Contribution": -0.006561885718625186,
+                        "Relative Importance (%)": 1.3188501616747161
+                    },
+                    {
+                        "Feature": "RGA_FUNCTION_DAY",
+                        "Mean Absolute Contribution": 0.0723779380982191,
+                        "Mean Signed Contribution": 0.0011533696578546132,
+                        "Relative Importance (%)": 1.2879028139185502
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_DEP1_A_MR",
+                        "Mean Absolute Contribution": 0.07218874252862412,
+                        "Mean Signed Contribution": 0.003209703759305511,
+                        "Relative Importance (%)": 1.2845362423794213
+                    },
+                    {
+                        "Feature": "FLOW_CHAMBER_RUN_A",
+                        "Mean Absolute Contribution": 0.07095133999545247,
+                        "Mean Signed Contribution": -0.009657171340368571,
+                        "Relative Importance (%)": 1.2625177344432175
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_SPS_DEP1_A",
+                        "Mean Absolute Contribution": 0.07058207336389581,
+                        "Mean Signed Contribution": -0.018794029595848916,
+                        "Relative Importance (%)": 1.2559469540871555
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_S",
+                        "Mean Absolute Contribution": 0.07035930008622701,
+                        "Mean Signed Contribution": -0.00224058484308676,
+                        "Relative Importance (%)": 1.2519828962718285
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_DEP1_A",
+                        "Mean Absolute Contribution": 0.06903551986611446,
+                        "Mean Signed Contribution": -0.006001908636330079,
+                        "Relative Importance (%)": 1.228427372098439
+                    },
+                    {
+                        "Feature": "GAS1_DEP1_A",
+                        "Mean Absolute Contribution": 0.06893378524860028,
+                        "Mean Signed Contribution": 0.00038426084042342864,
+                        "Relative Importance (%)": 1.226617092562821
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_A",
+                        "Mean Absolute Contribution": 0.062135738235959755,
+                        "Mean Signed Contribution": -0.01034046978871664,
+                        "Relative Importance (%)": 1.1056517251210294
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_R",
+                        "Mean Absolute Contribution": 0.0544079690556011,
+                        "Mean Signed Contribution": -0.00041444636190091826,
+                        "Relative Importance (%)": 0.9681427557553789
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_DEP1_A_MR",
+                        "Mean Absolute Contribution": 0.05379876493720587,
+                        "Mean Signed Contribution": -0.001857995884977242,
+                        "Relative Importance (%)": 0.9573024953259193
+                    },
+                    {
+                        "Feature": "TIME_PRE_PROCESS_X",
+                        "Mean Absolute Contribution": 0.05038313495806178,
+                        "Mean Signed Contribution": -0.002506850644019213,
+                        "Relative Importance (%)": 0.8965243137828828
+                    },
+                    {
+                        "Feature": "GAS1_DEP1_S",
+                        "Mean Absolute Contribution": 0.049425580379891206,
+                        "Mean Signed Contribution": 0.001866821389703895,
+                        "Relative Importance (%)": 0.879485458185298
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_S",
+                        "Mean Absolute Contribution": 0.049411891500741864,
+                        "Mean Signed Contribution": -0.00039854938922031244,
+                        "Relative Importance (%)": 0.8792418764193751
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_RUN_A_MR",
+                        "Mean Absolute Contribution": 0.03780933627932129,
+                        "Mean Signed Contribution": -0.0032201712854284265,
+                        "Relative Importance (%)": 0.6727844404803344
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_DIFF_SAFETY_A",
+                        "Mean Absolute Contribution": 0.03628035657603556,
+                        "Mean Signed Contribution": 0.004048397068549647,
+                        "Relative Importance (%)": 0.6455775689663407
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_SPS_X",
+                        "Mean Absolute Contribution": 0.03568056426666474,
+                        "Mean Signed Contribution": 0.0038239949350558347,
+                        "Relative Importance (%)": 0.6349047835388653
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_R",
+                        "Mean Absolute Contribution": 0.03269777930472847,
+                        "Mean Signed Contribution": -0.0024323820892274304,
+                        "Relative Importance (%)": 0.5818287047401217
+                    },
+                    {
+                        "Feature": "SPEED_MAGNETRON_DEP1_A",
+                        "Mean Absolute Contribution": 0.03255170946141735,
+                        "Mean Signed Contribution": 0.0027157215125061347,
+                        "Relative Importance (%)": 0.5792295182038357
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_RUN_R",
+                        "Mean Absolute Contribution": 0.03192360407475612,
+                        "Mean Signed Contribution": -0.00016886715123325499,
+                        "Relative Importance (%)": 0.5680529260519477
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DELTA_DEP1",
+                        "Mean Absolute Contribution": 0.03125797279329786,
+                        "Mean Signed Contribution": -0.005019720355290201,
+                        "Relative Importance (%)": 0.5562085930556283
+                    },
+                    {
+                        "Feature": "PRESS_TRANSFER_RUN_I",
+                        "Mean Absolute Contribution": 0.030669655858441638,
+                        "Mean Signed Contribution": -0.0014355860652111635,
+                        "Relative Importance (%)": 0.5457400019934036
+                    },
+                    {
+                        "Feature": "PRESS_CHAMBER_DEP1_R",
+                        "Mean Absolute Contribution": 0.029402296258479586,
+                        "Mean Signed Contribution": -0.0011384967706582116,
+                        "Relative Importance (%)": 0.5231884339614045
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_RUN_S",
+                        "Mean Absolute Contribution": 0.02880840971090266,
+                        "Mean Signed Contribution": 0.0008456351156512807,
+                        "Relative Importance (%)": 0.5126207364575774
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_RUN_A",
+                        "Mean Absolute Contribution": 0.027681552923725587,
+                        "Mean Signed Contribution": 0.00038916610063999176,
+                        "Relative Importance (%)": 0.49256929446818093
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_BP_I_ENG",
+                        "Mean Absolute Contribution": 0.02583939757648174,
+                        "Mean Signed Contribution": 0.0013907310972402502,
+                        "Relative Importance (%)": 0.45978973321332894
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_A_MR",
+                        "Mean Absolute Contribution": 0.023454178914933912,
+                        "Mean Signed Contribution": -0.0007389551826405363,
+                        "Relative Importance (%)": 0.4173468299373365
+                    },
+                    {
+                        "Feature": "LIFE_CRYO_RUN_A",
+                        "Mean Absolute Contribution": 0.02332983214532121,
+                        "Mean Signed Contribution": 0.002306191073375612,
+                        "Relative Importance (%)": 0.4151341867107699
+                    },
+                    {
+                        "Feature": "T_RUN_PRE_PROCESS",
+                        "Mean Absolute Contribution": 0.022489244342253297,
+                        "Mean Signed Contribution": -0.0009043447665450857,
+                        "Relative Importance (%)": 0.4001766537198789
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DELTA_DEP1",
+                        "Mean Absolute Contribution": 0.021808032387293914,
+                        "Mean Signed Contribution": -0.0019936908203677683,
+                        "Relative Importance (%)": 0.38805507611322515
+                    },
+                    {
+                        "Feature": "GAS2_DEP1_S",
+                        "Mean Absolute Contribution": 0.021489688097531805,
+                        "Mean Signed Contribution": 0.0022861405678411655,
+                        "Relative Importance (%)": 0.3823904147902797
+                    },
+                    {
+                        "Feature": "PRESS_CHAMBER_DEP1_S",
+                        "Mean Absolute Contribution": 0.02085080609072977,
+                        "Mean Signed Contribution": 0.00011735436476382459,
+                        "Relative Importance (%)": 0.3710220620029195
+                    },
+                    {
+                        "Feature": "TIME_POST_PROCESS_X",
+                        "Mean Absolute Contribution": 0.020795428172324482,
+                        "Mean Signed Contribution": -0.0017122499489947872,
+                        "Relative Importance (%)": 0.37003665983732675
+                    },
+                    {
+                        "Feature": "POWER_SPS_DELTA_DEP1_A",
+                        "Mean Absolute Contribution": 0.020763559439678628,
+                        "Mean Signed Contribution": -0.00020825407504607754,
+                        "Relative Importance (%)": 0.36946958330089774
+                    },
+                    {
+                        "Feature": "TEMP_CRYOFIRSTSTAGE_RUN_X",
+                        "Mean Absolute Contribution": 0.020340603594627856,
+                        "Mean Signed Contribution": 0.000462123569349194,
+                        "Relative Importance (%)": 0.36194344982269644
+                    },
+                    {
+                        "Feature": "FLOW_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 0.020139870550422673,
+                        "Mean Signed Contribution": 0.0014610418060503503,
+                        "Relative Importance (%)": 0.3583715789008215
+                    },
+                    {
+                        "Feature": "PRESS_CHAMBER_DEP1_A",
+                        "Mean Absolute Contribution": 0.019389817633458022,
+                        "Mean Signed Contribution": 3.057550087714462e-05,
+                        "Relative Importance (%)": 0.34502503591094374
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_A",
+                        "Mean Absolute Contribution": 0.01870737553531568,
+                        "Mean Signed Contribution": 0.00247687792582926,
+                        "Relative Importance (%)": 0.3328815689702127
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 0.01848008414286806,
+                        "Mean Signed Contribution": 0.0056027219646788435,
+                        "Relative Importance (%)": 0.32883711520979314
+                    },
+                    {
+                        "Feature": "PRESS_CHAMBER_DEP1_M",
+                        "Mean Absolute Contribution": 0.018081843814935182,
+                        "Mean Signed Contribution": -0.0010806143549241755,
+                        "Relative Importance (%)": 0.32175077298400906
+                    },
+                    {
+                        "Feature": "UTILISATION_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 0.017860600587427375,
+                        "Mean Signed Contribution": 0.00014229469003878637,
+                        "Relative Importance (%)": 0.3178139410880651
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_S",
+                        "Mean Absolute Contribution": 0.017677972983527468,
+                        "Mean Signed Contribution": -0.0004896248287959712,
+                        "Relative Importance (%)": 0.31456424081831286
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_DEP1_A",
+                        "Mean Absolute Contribution": 0.01760140892968201,
+                        "Mean Signed Contribution": 0.0006309507828161662,
+                        "Relative Importance (%)": 0.3132018496949465
+                    },
+                    {
+                        "Feature": "GAS2_DEP1_A",
+                        "Mean Absolute Contribution": 0.016759497308083054,
+                        "Mean Signed Contribution": -0.0005430746642445183,
+                        "Relative Importance (%)": 0.2982207604981722
+                    },
+                    {
+                        "Feature": "LIFE_SHIELDING_RUN_A",
+                        "Mean Absolute Contribution": 0.016012732026615895,
+                        "Mean Signed Contribution": 0.0033100427698310032,
+                        "Relative Importance (%)": 0.28493271813872983
+                    },
+                    {
+                        "Feature": "T_RECIPE",
+                        "Mean Absolute Contribution": 0.01460852533526849,
+                        "Mean Signed Contribution": 0.00013680175641852925,
+                        "Relative Importance (%)": 0.25994607446486045
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_SPS_M",
+                        "Mean Absolute Contribution": 0.014226064557288712,
+                        "Mean Signed Contribution": 0.002276970290933598,
+                        "Relative Importance (%)": 0.2531405156838794
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_DEP1_S",
+                        "Mean Absolute Contribution": 0.012203314662178773,
+                        "Mean Signed Contribution": -0.0002532688692546432,
+                        "Relative Importance (%)": 0.21714743063315117
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_BP_I",
+                        "Mean Absolute Contribution": 0.01170865613352043,
+                        "Mean Signed Contribution": 0.0014005751805368982,
+                        "Relative Importance (%)": 0.20834540991071276
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_DEP1_S",
+                        "Mean Absolute Contribution": 0.011282532402627785,
+                        "Mean Signed Contribution": 3.535861858438716e-05,
+                        "Relative Importance (%)": 0.2007629066436349
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_SAFETY_RUN_A",
+                        "Mean Absolute Contribution": 0.010927045801123742,
+                        "Mean Signed Contribution": 0.0012191525066062772,
+                        "Relative Importance (%)": 0.19443733000498975
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_5SEC_S",
+                        "Mean Absolute Contribution": 0.010695784253554072,
+                        "Mean Signed Contribution": -0.000727215176663535,
+                        "Relative Importance (%)": 0.19032223076767854
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_A_MR",
+                        "Mean Absolute Contribution": 0.010583013337886775,
+                        "Mean Signed Contribution": 0.00047672522691771525,
+                        "Relative Importance (%)": 0.18831556985093634
+                    },
+                    {
+                        "Feature": "SPEED_MAGNETRON_DEP1_S",
+                        "Mean Absolute Contribution": 0.01053524324296766,
+                        "Mean Signed Contribution": -0.0008718215986353774,
+                        "Relative Importance (%)": 0.18746554232481372
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_SPS",
+                        "Mean Absolute Contribution": 0.010439970417352859,
+                        "Mean Signed Contribution": -0.0008412832258523404,
+                        "Relative Importance (%)": 0.1857702447877001
+                    },
+                    {
+                        "Feature": "LIFE_CRYO_RUN_S",
+                        "Mean Absolute Contribution": 0.010304534541600336,
+                        "Mean Signed Contribution": 0.0004477795676750754,
+                        "Relative Importance (%)": 0.1833602805075559
+                    },
+                    {
+                        "Feature": "SPEED_CRYO_RUN_A",
+                        "Mean Absolute Contribution": 0.00885056824385805,
+                        "Mean Signed Contribution": -0.00017344823246152687,
+                        "Relative Importance (%)": 0.15748820767143978
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_SPS",
+                        "Mean Absolute Contribution": 0.008680854463885652,
+                        "Mean Signed Contribution": -0.00011246333313177341,
+                        "Relative Importance (%)": 0.15446829773022827
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_SAFETY_RUN_S",
+                        "Mean Absolute Contribution": 0.007869479802027228,
+                        "Mean Signed Contribution": 0.00015437422679205585,
+                        "Relative Importance (%)": 0.14003058732278867
+                    },
+                    {
+                        "Feature": "T_RUN_PRE1",
+                        "Mean Absolute Contribution": 0.007824315410139475,
+                        "Mean Signed Contribution": 1.1410884822014857e-06,
+                        "Relative Importance (%)": 0.1392269260286216
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_DEP1_X",
+                        "Mean Absolute Contribution": 0.007363133507069975,
+                        "Mean Signed Contribution": 0.00034032074889713324,
+                        "Relative Importance (%)": 0.1310205929069803
+                    },
+                    {
+                        "Feature": "TIME_PREV_DIFF_X",
+                        "Mean Absolute Contribution": 0.0073212322990967756,
+                        "Mean Signed Contribution": 0.0006731745686433519,
+                        "Relative Importance (%)": 0.13027499714847668
+                    },
+                    {
+                        "Feature": "SPEED_CRYO_RUN_S",
+                        "Mean Absolute Contribution": 0.007081449055640471,
+                        "Mean Signed Contribution": 0.000934706712933341,
+                        "Relative Importance (%)": 0.12600826170267249
+                    },
+                    {
+                        "Feature": "T_RUN_PRE2",
+                        "Mean Absolute Contribution": 0.006568890903552109,
+                        "Mean Signed Contribution": -0.0006498893147968871,
+                        "Relative Importance (%)": 0.11688773266141018
+                    },
+                    {
+                        "Feature": "PRESS_PUMP2BASE_I",
+                        "Mean Absolute Contribution": 0.005940717488126657,
+                        "Mean Signed Contribution": 0.0002057730602617233,
+                        "Relative Importance (%)": 0.10570992999649602
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_RUN_I",
+                        "Mean Absolute Contribution": 0.005812342946941639,
+                        "Mean Signed Contribution": -0.00048150505966766563,
+                        "Relative Importance (%)": 0.10342561605813368
+                    },
+                    {
+                        "Feature": "LIFE_SHIELDING_RUN_S",
+                        "Mean Absolute Contribution": 0.0055009690474827014,
+                        "Mean Signed Contribution": 0.00010837431476292626,
+                        "Relative Importance (%)": 0.09788498680243754
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_R_ENG",
+                        "Mean Absolute Contribution": 0.005284005267084426,
+                        "Mean Signed Contribution": 5.485252391367101e-05,
+                        "Relative Importance (%)": 0.09402430396681777
+                    },
+                    {
+                        "Feature": "T_LL_DEGAS_ST1_MR",
+                        "Mean Absolute Contribution": 0.004917421541072357,
+                        "Mean Signed Contribution": 0.0012828801222153627,
+                        "Relative Importance (%)": 0.0875012635946673
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_I_MR",
+                        "Mean Absolute Contribution": 0.004353009834984474,
+                        "Mean Signed Contribution": 0.000678779800900589,
+                        "Relative Importance (%)": 0.07745804540444035
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 0.004320429866882779,
+                        "Mean Signed Contribution": -3.611460973906676e-05,
+                        "Relative Importance (%)": 0.07687831304817165
+                    },
+                    {
+                        "Feature": "UTILISATION_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 0.004285278723666172,
+                        "Mean Signed Contribution": 0.0010509656784827113,
+                        "Relative Importance (%)": 0.0762528288543599
+                    },
+                    {
+                        "Feature": "PRESS_TRANSFER_RUN_X",
+                        "Mean Absolute Contribution": 0.004157274122940808,
+                        "Mean Signed Contribution": -0.001001169698071392,
+                        "Relative Importance (%)": 0.07397509768654188
+                    },
+                    {
+                        "Feature": "TEMP_CRYOSECONDSTAGE_RUN_X",
+                        "Mean Absolute Contribution": 0.004001398592385265,
+                        "Mean Signed Contribution": -0.0005273654174566693,
+                        "Relative Importance (%)": 0.07120142742598398
+                    },
+                    {
+                        "Feature": "T_RUN_ENG",
+                        "Mean Absolute Contribution": 0.003848423817925948,
+                        "Mean Signed Contribution": -0.0001940199373704524,
+                        "Relative Importance (%)": 0.06847937361150046
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_BP_I_ENG1",
+                        "Mean Absolute Contribution": 0.0035993163024205404,
+                        "Mean Signed Contribution": -0.0001804047155259564,
+                        "Relative Importance (%)": 0.06404672080848331
+                    },
+                    {
+                        "Feature": "TIME_PREV_DIFF_I",
+                        "Mean Absolute Contribution": 0.0031676762692018448,
+                        "Mean Signed Contribution": -4.404660156643743e-05,
+                        "Relative Importance (%)": 0.056366059712171505
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_RUN_A",
+                        "Mean Absolute Contribution": 0.002804517651801965,
+                        "Mean Signed Contribution": 0.00047890737303615637,
+                        "Relative Importance (%)": 0.04990396618564172
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_RUN_I",
+                        "Mean Absolute Contribution": 0.0025773915895038924,
+                        "Mean Signed Contribution": 0.0005673464637525006,
+                        "Relative Importance (%)": 0.04586245433225106
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 0.0024576346868044373,
+                        "Mean Signed Contribution": -0.00031646482769597564,
+                        "Relative Importance (%)": 0.043731483817955726
+                    },
+                    {
+                        "Feature": "T_RUN",
+                        "Mean Absolute Contribution": 0.002445484459785759,
+                        "Mean Signed Contribution": -0.00023835460762093615,
+                        "Relative Importance (%)": 0.04351528103602693
+                    },
+                    {
+                        "Feature": "T_LL_DEGAS_ST1",
+                        "Mean Absolute Contribution": 0.0024206733388951263,
+                        "Mean Signed Contribution": -0.00019750410516228273,
+                        "Relative Importance (%)": 0.0430737885971548
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_RUN_S",
+                        "Mean Absolute Contribution": 0.0021712006225733617,
+                        "Mean Signed Contribution": -0.00023967346791943666,
+                        "Relative Importance (%)": 0.038634637361446816
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_SPS_M",
+                        "Mean Absolute Contribution": 0.0020669165763696077,
+                        "Mean Signed Contribution": -0.00047746681913352025,
+                        "Relative Importance (%)": 0.03677899294711759
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 0.0020140992326086226,
+                        "Mean Signed Contribution": 1.8650592578125566e-05,
+                        "Relative Importance (%)": 0.03583915399286103
+                    },
+                    {
+                        "Feature": "PROCESS_STATE_RUN_X",
+                        "Mean Absolute Contribution": 0.0011029999581023621,
+                        "Mean Signed Contribution": 6.503433225025721e-06,
+                        "Relative Importance (%)": 0.019626930348089437
+                    },
+                    {
+                        "Feature": "POWER_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 0.0009316089697790494,
+                        "Mean Signed Contribution": 4.213423835630246e-05,
+                        "Relative Importance (%)": 0.01657717593477178
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_G",
+                        "Mean Absolute Contribution": 0.000903467717329813,
+                        "Mean Signed Contribution": 0.000192844725124607,
+                        "Relative Importance (%)": 0.01607642668480861
+                    },
+                    {
+                        "Feature": "WAFERCOUNT_MR",
+                        "Mean Absolute Contribution": 0.0008469341354223278,
+                        "Mean Signed Contribution": 0.00019186340602812292,
+                        "Relative Importance (%)": 0.015070460486645577
+                    },
+                    {
+                        "Feature": "POWER_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 0.000527200713223123,
+                        "Mean Signed Contribution": 5.697455847080202e-05,
+                        "Relative Importance (%)": 0.009381080753344002
+                    },
+                    {
+                        "Feature": "WAFERCOUNT_RECIPE_MR",
+                        "Mean Absolute Contribution": 0.0,
+                        "Mean Signed Contribution": 0.0,
+                        "Relative Importance (%)": 0.0
+                    }
+                ]
+            },
+            "mean_resistance": {
+                "candidate": "RES-XGB-2",
+                "records": 4165,
+                "raw_input_groups": 111,
+                "transformed_features": 173,
+                "mean_base_prediction": 0.0028978352255316963,
+                "maximum_reconstruction_error": 3.413072116598137e-10,
+                "mean_reconstruction_error": 1.1140188432338596e-10,
+                "calculation_seconds": 0.962554600002477,
+                "global_importance": [
+                    {
+                        "Feature": "T_DEP1_PROCESS",
+                        "Mean Absolute Contribution": 1.4378217373183064e-05,
+                        "Mean Signed Contribution": -7.657831631629419e-07,
+                        "Relative Importance (%)": 12.476550673337474
+                    },
+                    {
+                        "Feature": "T_RECIPE_ENG",
+                        "Mean Absolute Contribution": 1.1327764654945846e-05,
+                        "Mean Signed Contribution": 7.236225447560739e-07,
+                        "Relative Importance (%)": 9.829551610248394
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_DEP1_S",
+                        "Mean Absolute Contribution": 4.693336639567076e-06,
+                        "Mean Signed Contribution": -6.637248871502212e-07,
+                        "Relative Importance (%)": 4.072594737634482
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_SPS_DEP1_A",
+                        "Mean Absolute Contribution": 4.019577618345946e-06,
+                        "Mean Signed Contribution": -9.913362023482667e-08,
+                        "Relative Importance (%)": 3.487947256538381
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_RE_A",
+                        "Mean Absolute Contribution": 3.5179156236990777e-06,
+                        "Mean Signed Contribution": -6.944698999309467e-07,
+                        "Relative Importance (%)": 3.0526352053537225
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_DEP1_A",
+                        "Mean Absolute Contribution": 3.222405579287791e-06,
+                        "Mean Signed Contribution": 1.6556667953004219e-07,
+                        "Relative Importance (%)": 2.796209394845796
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_SPS_X",
+                        "Mean Absolute Contribution": 2.9126621934779867e-06,
+                        "Mean Signed Contribution": -2.717305782073977e-07,
+                        "Relative Importance (%)": 2.527432748305807
+                    },
+                    {
+                        "Feature": "RGA_FUNCTION_DAY",
+                        "Mean Absolute Contribution": 2.9009413962883595e-06,
+                        "Mean Signed Contribution": -5.9883565094086094e-09,
+                        "Relative Importance (%)": 2.517262146744237
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 2.804687323190797e-06,
+                        "Mean Signed Contribution": -3.556723208807483e-07,
+                        "Relative Importance (%)": 2.4337386619236003
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_A",
+                        "Mean Absolute Contribution": 2.564693414633572e-06,
+                        "Mean Signed Contribution": 4.925240765356602e-07,
+                        "Relative Importance (%)": 2.2254864089710735
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_X",
+                        "Mean Absolute Contribution": 2.495031694348081e-06,
+                        "Mean Signed Contribution": 2.3730178630292472e-07,
+                        "Relative Importance (%)": 2.165038165591833
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_5SEC_S",
+                        "Mean Absolute Contribution": 2.4921836420867288e-06,
+                        "Mean Signed Contribution": 1.2804809018820494e-07,
+                        "Relative Importance (%)": 2.1625667974495384
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_I",
+                        "Mean Absolute Contribution": 2.403128874208465e-06,
+                        "Mean Signed Contribution": 2.00957234233887e-07,
+                        "Relative Importance (%)": 2.0852904359022593
+                    },
+                    {
+                        "Feature": "PRESS_CHAMBER_DEP1_S",
+                        "Mean Absolute Contribution": 2.3840011232976723e-06,
+                        "Mean Signed Contribution": -5.10821394419335e-08,
+                        "Relative Importance (%)": 2.068692526209324
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 2.367985731880572e-06,
+                        "Mean Signed Contribution": 3.2234566194392177e-07,
+                        "Relative Importance (%)": 2.0547953345490098
+                    },
+                    {
+                        "Feature": "OHM_TARGET_DEP1_A_A",
+                        "Mean Absolute Contribution": 2.3560454224496413e-06,
+                        "Mean Signed Contribution": 6.275361831560449e-08,
+                        "Relative Importance (%)": 2.0444342534912017
+                    },
+                    {
+                        "Feature": "LIFE_SHIELDING_RUN_A",
+                        "Mean Absolute Contribution": 2.0657375429447666e-06,
+                        "Mean Signed Contribution": 2.0098963262766864e-07,
+                        "Relative Importance (%)": 1.7925225682313017
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_A",
+                        "Mean Absolute Contribution": 1.8523963926575327e-06,
+                        "Mean Signed Contribution": 5.882316830231632e-08,
+                        "Relative Importance (%)": 1.6073979729368075
+                    },
+                    {
+                        "Feature": "equipment",
+                        "Mean Absolute Contribution": 1.8022880218795795e-06,
+                        "Mean Signed Contribution": 7.894547880041745e-08,
+                        "Relative Importance (%)": 1.5639169480682071
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_DEP1_A",
+                        "Mean Absolute Contribution": 1.7979716861580891e-06,
+                        "Mean Signed Contribution": 2.0575249510042213e-07,
+                        "Relative Importance (%)": 1.5601714920109941
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_M",
+                        "Mean Absolute Contribution": 1.7796819639584415e-06,
+                        "Mean Signed Contribution": 4.498007585863668e-08,
+                        "Relative Importance (%)": 1.5443007731379597
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_SPS_DEP1_S",
+                        "Mean Absolute Contribution": 1.7426301805870799e-06,
+                        "Mean Signed Contribution": -7.302691959936306e-08,
+                        "Relative Importance (%)": 1.5121494680928353
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_SPS_M",
+                        "Mean Absolute Contribution": 1.4236925956351355e-06,
+                        "Mean Signed Contribution": -1.8431332977330137e-07,
+                        "Relative Importance (%)": 1.235394649536084
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_M",
+                        "Mean Absolute Contribution": 1.3967015213700499e-06,
+                        "Mean Signed Contribution": 2.382941745787506e-07,
+                        "Relative Importance (%)": 1.2119734216428237
+                    },
+                    {
+                        "Feature": "POWER_TARGET_SPS_DEP1_A",
+                        "Mean Absolute Contribution": 1.3885401540166329e-06,
+                        "Mean Signed Contribution": -1.0547271113615129e-07,
+                        "Relative Importance (%)": 1.2048914788187748
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_SPS_DEP1_A",
+                        "Mean Absolute Contribution": 1.271889155580659e-06,
+                        "Mean Signed Contribution": 2.3632036258061234e-07,
+                        "Relative Importance (%)": 1.1036687712113407
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_X",
+                        "Mean Absolute Contribution": 1.2126371074403753e-06,
+                        "Mean Signed Contribution": -8.810588743215869e-08,
+                        "Relative Importance (%)": 1.0522534140822932
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_DEP1_A_MR",
+                        "Mean Absolute Contribution": 1.2109479183929946e-06,
+                        "Mean Signed Contribution": -3.9582030841652044e-08,
+                        "Relative Importance (%)": 1.0507876376094878
+                    },
+                    {
+                        "Feature": "FLOW_CHAMBER_RUN_A",
+                        "Mean Absolute Contribution": 1.166453082987418e-06,
+                        "Mean Signed Contribution": 2.2151448329114742e-07,
+                        "Relative Importance (%)": 1.0121777004920476
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_DEP1_A_MR",
+                        "Mean Absolute Contribution": 1.0993001110253999e-06,
+                        "Mean Signed Contribution": -1.6320391711657216e-08,
+                        "Relative Importance (%)": 0.9539063977426548
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_R",
+                        "Mean Absolute Contribution": 1.083198141811411e-06,
+                        "Mean Signed Contribution": -3.8978927566239276e-08,
+                        "Relative Importance (%)": 0.9399340790869675
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_RECIPE_A",
+                        "Mean Absolute Contribution": 1.0135131413727661e-06,
+                        "Mean Signed Contribution": -5.6989047554227633e-08,
+                        "Relative Importance (%)": 0.8794656345935719
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_S",
+                        "Mean Absolute Contribution": 9.753258913087956e-07,
+                        "Mean Signed Contribution": -1.596748680812406e-08,
+                        "Relative Importance (%)": 0.8463290399704332
+                    },
+                    {
+                        "Feature": "GAS1_DEP1_S",
+                        "Mean Absolute Contribution": 9.329974387290736e-07,
+                        "Mean Signed Contribution": 8.2747960887815e-08,
+                        "Relative Importance (%)": 0.8095989593333263
+                    },
+                    {
+                        "Feature": "T_DEP1_PROCESS_MR",
+                        "Mean Absolute Contribution": 9.220540482954401e-07,
+                        "Mean Signed Contribution": 4.714892021175122e-08,
+                        "Relative Importance (%)": 0.8001029445117671
+                    },
+                    {
+                        "Feature": "PRESS_CHAMBER_DEP1_A",
+                        "Mean Absolute Contribution": 9.035865837019129e-07,
+                        "Mean Signed Contribution": -3.9922126765188527e-08,
+                        "Relative Importance (%)": 0.7840779914992367
+                    },
+                    {
+                        "Feature": "GAS1_DEP1_A",
+                        "Mean Absolute Contribution": 9.006296092392052e-07,
+                        "Mean Signed Contribution": -5.899012495472876e-09,
+                        "Relative Importance (%)": 0.7815121072337404
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_RUN_A_MR",
+                        "Mean Absolute Contribution": 8.40042357474366e-07,
+                        "Mean Signed Contribution": 1.3808859855027984e-07,
+                        "Relative Importance (%)": 0.7289381408523345
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_S",
+                        "Mean Absolute Contribution": 8.276258084079639e-07,
+                        "Mean Signed Contribution": 3.683768183965596e-08,
+                        "Relative Importance (%)": 0.7181638077348035
+                    },
+                    {
+                        "Feature": "PRESS_TRANSFER_RUN_I",
+                        "Mean Absolute Contribution": 7.339921658238469e-07,
+                        "Mean Signed Contribution": -1.883776795727254e-09,
+                        "Relative Importance (%)": 0.6369141746190341
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_SPS_X",
+                        "Mean Absolute Contribution": 6.971528150819083e-07,
+                        "Mean Signed Contribution": -6.841462548093678e-08,
+                        "Relative Importance (%)": 0.6049472058095414
+                    },
+                    {
+                        "Feature": "SPEED_MAGNETRON_DEP1_A",
+                        "Mean Absolute Contribution": 6.920934763923663e-07,
+                        "Mean Signed Contribution": -1.1331150911115887e-07,
+                        "Relative Importance (%)": 0.6005570165464843
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_BP_I_ENG",
+                        "Mean Absolute Contribution": 6.637231569358086e-07,
+                        "Mean Signed Contribution": -1.5361010833037588e-08,
+                        "Relative Importance (%)": 0.5759389627828311
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_DIFF_SAFETY_A",
+                        "Mean Absolute Contribution": 6.484315273221538e-07,
+                        "Mean Signed Contribution": 1.3280444911958582e-08,
+                        "Relative Importance (%)": 0.5626698080050969
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_RUN_A",
+                        "Mean Absolute Contribution": 6.171669439047317e-07,
+                        "Mean Signed Contribution": -1.4359035910363228e-08,
+                        "Relative Importance (%)": 0.5355402863708099
+                    },
+                    {
+                        "Feature": "LIFE_SHIELDING_RUN_S",
+                        "Mean Absolute Contribution": 6.004569824138905e-07,
+                        "Mean Signed Contribution": -3.362640558587951e-10,
+                        "Relative Importance (%)": 0.521040388651998
+                    },
+                    {
+                        "Feature": "TEMP_CRYOFIRSTSTAGE_RUN_X",
+                        "Mean Absolute Contribution": 5.960611449818676e-07,
+                        "Mean Signed Contribution": 5.194090090715632e-10,
+                        "Relative Importance (%)": 0.5172259458007806
+                    },
+                    {
+                        "Feature": "UTILISATION_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 5.512237483208082e-07,
+                        "Mean Signed Contribution": 7.633559825853804e-08,
+                        "Relative Importance (%)": 0.47831875466694707
+                    },
+                    {
+                        "Feature": "PRESS_CHAMBER_DEP1_R",
+                        "Mean Absolute Contribution": 5.499270116944084e-07,
+                        "Mean Signed Contribution": 1.7754003464054874e-08,
+                        "Relative Importance (%)": 0.47719352475774945
+                    },
+                    {
+                        "Feature": "TIME_PRE_PROCESS_X",
+                        "Mean Absolute Contribution": 5.47367524966875e-07,
+                        "Mean Signed Contribution": -1.2774629932538754e-08,
+                        "Relative Importance (%)": 0.4749725563981137
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_A_MR",
+                        "Mean Absolute Contribution": 5.093260289615352e-07,
+                        "Mean Signed Contribution": -3.052730702975123e-08,
+                        "Relative Importance (%)": 0.44196243836460714
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_DEP1_X",
+                        "Mean Absolute Contribution": 5.046224090690515e-07,
+                        "Mean Signed Contribution": -8.332520929959845e-09,
+                        "Relative Importance (%)": 0.43788092043971155
+                    },
+                    {
+                        "Feature": "GAS2_DEP1_S",
+                        "Mean Absolute Contribution": 5.026249565287639e-07,
+                        "Mean Signed Contribution": -4.963983893146846e-08,
+                        "Relative Importance (%)": 0.43614765148225615
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_DEP1_S",
+                        "Mean Absolute Contribution": 4.843463114172153e-07,
+                        "Mean Signed Contribution": 4.9800156935247325e-08,
+                        "Relative Importance (%)": 0.4202865446388213
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_S",
+                        "Mean Absolute Contribution": 4.7392004661754303e-07,
+                        "Mean Signed Contribution": 2.3665853885635e-08,
+                        "Relative Importance (%)": 0.4112392602828784
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_R",
+                        "Mean Absolute Contribution": 4.7005361740148043e-07,
+                        "Mean Signed Contribution": 2.3164670759718978e-08,
+                        "Relative Importance (%)": 0.4078842059818458
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_SAFETY_RUN_A",
+                        "Mean Absolute Contribution": 4.0082470023145616e-07,
+                        "Mean Signed Contribution": 4.0625262926094545e-08,
+                        "Relative Importance (%)": 0.347811523067547
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 3.915560649951505e-07,
+                        "Mean Signed Contribution": -1.929051903843247e-07,
+                        "Relative Importance (%)": 0.3397687598934325
+                    },
+                    {
+                        "Feature": "FLOW_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 3.724694692773205e-07,
+                        "Mean Signed Contribution": -4.658263001019847e-09,
+                        "Relative Importance (%)": 0.323206562197134
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_RUN_S",
+                        "Mean Absolute Contribution": 3.43403197259979e-07,
+                        "Mean Signed Contribution": 1.5603847006855332e-09,
+                        "Relative Importance (%)": 0.29798460273602945
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DELTA_DEP1",
+                        "Mean Absolute Contribution": 3.343077950483747e-07,
+                        "Mean Signed Contribution": -6.16240604437576e-08,
+                        "Relative Importance (%)": 0.29009216074255134
+                    },
+                    {
+                        "Feature": "UTILISATION_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 3.147284129037115e-07,
+                        "Mean Signed Contribution": -5.03400528353149e-09,
+                        "Relative Importance (%)": 0.27310235267801725
+                    },
+                    {
+                        "Feature": "PRESS_CHAMBER_DEP1_M",
+                        "Mean Absolute Contribution": 3.0418196600626735e-07,
+                        "Mean Signed Contribution": -9.90588682406718e-09,
+                        "Relative Importance (%)": 0.2639507815392305
+                    },
+                    {
+                        "Feature": "POWER_SPS_DELTA_DEP1_A",
+                        "Mean Absolute Contribution": 3.0167461961738665e-07,
+                        "Mean Signed Contribution": 1.735774897018451e-08,
+                        "Relative Importance (%)": 0.26177505742374824
+                    },
+                    {
+                        "Feature": "SPEED_MAGNETRON_DEP1_S",
+                        "Mean Absolute Contribution": 2.987743270306422e-07,
+                        "Mean Signed Contribution": -1.7752896735874865e-08,
+                        "Relative Importance (%)": 0.25925835827483207
+                    },
+                    {
+                        "Feature": "T_RUN_PRE_PROCESS",
+                        "Mean Absolute Contribution": 2.885562981395344e-07,
+                        "Mean Signed Contribution": -6.804654545995367e-09,
+                        "Relative Importance (%)": 0.25039176849303424
+                    },
+                    {
+                        "Feature": "GAS2_DEP1_A",
+                        "Mean Absolute Contribution": 2.8845926663364355e-07,
+                        "Mean Signed Contribution": 7.609201875118667e-09,
+                        "Relative Importance (%)": 0.25030757039888
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_A",
+                        "Mean Absolute Contribution": 2.7099152983635563e-07,
+                        "Mean Signed Contribution": -1.0570954856429756e-09,
+                        "Relative Importance (%)": 0.23515012092907572
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_DEP1_S",
+                        "Mean Absolute Contribution": 2.696685351886645e-07,
+                        "Mean Signed Contribution": -4.830634690775753e-10,
+                        "Relative Importance (%)": 0.23400210589118522
+                    },
+                    {
+                        "Feature": "TIME_PREV_DIFF_X",
+                        "Mean Absolute Contribution": 2.514544135656836e-07,
+                        "Mean Signed Contribution": -3.373720075563303e-08,
+                        "Relative Importance (%)": 0.21819698864325032
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DELTA_DEP1",
+                        "Mean Absolute Contribution": 2.510646618801044e-07,
+                        "Mean Signed Contribution": 3.7251911259743053e-08,
+                        "Relative Importance (%)": 0.21785878561509067
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_RUN_R",
+                        "Mean Absolute Contribution": 2.467889040172864e-07,
+                        "Mean Signed Contribution": -3.835443975723644e-08,
+                        "Relative Importance (%)": 0.21414854057860466
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_DEP1_A",
+                        "Mean Absolute Contribution": 2.458060606237916e-07,
+                        "Mean Signed Contribution": -4.436019599845165e-08,
+                        "Relative Importance (%)": 0.2132956883032062
+                    },
+                    {
+                        "Feature": "T_RECIPE",
+                        "Mean Absolute Contribution": 2.2152509787791704e-07,
+                        "Mean Signed Contribution": -2.91195963619369e-08,
+                        "Relative Importance (%)": 0.19222613188786472
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_BP_I",
+                        "Mean Absolute Contribution": 2.1482875350628528e-07,
+                        "Mean Signed Contribution": 5.630473905144984e-09,
+                        "Relative Importance (%)": 0.18641544773208013
+                    },
+                    {
+                        "Feature": "TEMP_PLATEN_SAFETY_RUN_S",
+                        "Mean Absolute Contribution": 2.0701441941861114e-07,
+                        "Mean Signed Contribution": -1.0943372311644554e-08,
+                        "Relative Importance (%)": 0.17963463946546598
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_BP_I_ENG1",
+                        "Mean Absolute Contribution": 2.018185195353741e-07,
+                        "Mean Signed Contribution": -1.7687353083374924e-08,
+                        "Relative Importance (%)": 0.17512595062704958
+                    },
+                    {
+                        "Feature": "SPEED_CRYO_RUN_A",
+                        "Mean Absolute Contribution": 1.9032872770731748e-07,
+                        "Mean Signed Contribution": 2.6781344201521153e-08,
+                        "Relative Importance (%)": 0.16515580159896381
+                    },
+                    {
+                        "Feature": "LIFE_CRYO_RUN_A",
+                        "Mean Absolute Contribution": 1.7845002817798172e-07,
+                        "Mean Signed Contribution": -2.664461397565486e-09,
+                        "Relative Importance (%)": 0.1548481819014395
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_RUN_I",
+                        "Mean Absolute Contribution": 1.7064143804768226e-07,
+                        "Mean Signed Contribution": -1.0599877004381822e-08,
+                        "Relative Importance (%)": 0.14807235789493153
+                    },
+                    {
+                        "Feature": "SPEED_CRYO_RUN_S",
+                        "Mean Absolute Contribution": 1.5221661733973253e-07,
+                        "Mean Signed Contribution": 1.4122625033649131e-08,
+                        "Relative Importance (%)": 0.13208440867678714
+                    },
+                    {
+                        "Feature": "T_RUN_PRE2",
+                        "Mean Absolute Contribution": 1.4972754561018683e-07,
+                        "Mean Signed Contribution": 2.7232744190997136e-08,
+                        "Relative Importance (%)": 0.12992454220953162
+                    },
+                    {
+                        "Feature": "TEMP_CRYOSECONDSTAGE_RUN_X",
+                        "Mean Absolute Contribution": 1.381706238026806e-07,
+                        "Mean Signed Contribution": 1.6268241147820535e-08,
+                        "Relative Importance (%)": 0.11989614183021328
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_I_MR",
+                        "Mean Absolute Contribution": 1.343985228925655e-07,
+                        "Mean Signed Contribution": 2.6431100093906012e-08,
+                        "Relative Importance (%)": 0.11662293994930621
+                    },
+                    {
+                        "Feature": "DCBIAS_PLATEN_DEP1_A_MR",
+                        "Mean Absolute Contribution": 1.2867903112925502e-07,
+                        "Mean Signed Contribution": 2.539195299743096e-08,
+                        "Relative Importance (%)": 0.11165990962652275
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_95_DEP1_SPS",
+                        "Mean Absolute Contribution": 1.286234162805246e-07,
+                        "Mean Signed Contribution": 1.9033279059519763e-08,
+                        "Relative Importance (%)": 0.11161165041188123
+                    },
+                    {
+                        "Feature": "PRESS_PUMP2BASE_I",
+                        "Mean Absolute Contribution": 1.2363679193492158e-07,
+                        "Mean Signed Contribution": 1.58556417557283e-08,
+                        "Relative Importance (%)": 0.10728455827507337
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_SPS_M",
+                        "Mean Absolute Contribution": 1.2062877229246233e-07,
+                        "Mean Signed Contribution": -3.396271488161976e-08,
+                        "Relative Importance (%)": 0.10467438007832874
+                    },
+                    {
+                        "Feature": "LIFE_CRYO_RUN_S",
+                        "Mean Absolute Contribution": 1.1935637197320207e-07,
+                        "Mean Signed Contribution": 3.612508451044171e-08,
+                        "Relative Importance (%)": 0.10357026775007655
+                    },
+                    {
+                        "Feature": "T_LL_DEGAS_ST1_MR",
+                        "Mean Absolute Contribution": 1.0977856003988135e-07,
+                        "Mean Signed Contribution": -2.1023348719305548e-08,
+                        "Relative Importance (%)": 0.09525921966781226
+                    },
+                    {
+                        "Feature": "T_RUN_PRE1",
+                        "Mean Absolute Contribution": 1.003147897507225e-07,
+                        "Mean Signed Contribution": 6.2589580842942074e-09,
+                        "Relative Importance (%)": 0.08704713005274362
+                    },
+                    {
+                        "Feature": "PRESS_TRANSFER_RUN_X",
+                        "Mean Absolute Contribution": 9.03141707388946e-08,
+                        "Mean Signed Contribution": -3.3809460271742004e-09,
+                        "Relative Importance (%)": 0.07836919546409785
+                    },
+                    {
+                        "Feature": "POWER_TARGET_DEP1_R_ENG",
+                        "Mean Absolute Contribution": 8.785161372807018e-08,
+                        "Mean Signed Contribution": 4.653803113544456e-10,
+                        "Relative Importance (%)": 0.0762323368720976
+                    },
+                    {
+                        "Feature": "TIME_PREV_DIFF_I",
+                        "Mean Absolute Contribution": 8.196297774678329e-08,
+                        "Mean Signed Contribution": 3.682201428107105e-09,
+                        "Relative Importance (%)": 0.07112253338878169
+                    },
+                    {
+                        "Feature": "LIFE_TARGET_RUN_I",
+                        "Mean Absolute Contribution": 7.698518488268328e-08,
+                        "Mean Signed Contribution": -5.32951946572109e-10,
+                        "Relative Importance (%)": 0.06680310467947902
+                    },
+                    {
+                        "Feature": "TIME_POST_PROCESS_X",
+                        "Mean Absolute Contribution": 7.461101891068245e-08,
+                        "Mean Signed Contribution": 5.778152741230439e-10,
+                        "Relative Importance (%)": 0.06474294650494557
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 7.362801735651749e-08,
+                        "Mean Signed Contribution": -8.126660913210661e-11,
+                        "Relative Importance (%)": 0.06388995698724756
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_20_90_DEP1_SPS",
+                        "Mean Absolute Contribution": 7.335320175009759e-08,
+                        "Mean Signed Contribution": 1.2701389882666858e-08,
+                        "Relative Importance (%)": 0.06365148856307998
+                    },
+                    {
+                        "Feature": "T_RUN_ENG",
+                        "Mean Absolute Contribution": 6.937921158910861e-08,
+                        "Mean Signed Contribution": -4.952490866830852e-09,
+                        "Relative Importance (%)": 0.060203099355152244
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 6.421379851125932e-08,
+                        "Mean Signed Contribution": 4.915707136837492e-09,
+                        "Relative Importance (%)": 0.0557208651294612
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_RUN_A",
+                        "Mean Absolute Contribution": 4.5596629186633855e-08,
+                        "Mean Signed Contribution": 3.931266003689464e-09,
+                        "Relative Importance (%)": 0.039566007371779954
+                    },
+                    {
+                        "Feature": "T_LL_DEGAS_ST1",
+                        "Mean Absolute Contribution": 3.79220751317575e-08,
+                        "Mean Signed Contribution": 2.806601780660827e-09,
+                        "Relative Importance (%)": 0.03290649179514663
+                    },
+                    {
+                        "Feature": "POWER_TARGET_RUN_A",
+                        "Mean Absolute Contribution": 3.574678949659252e-08,
+                        "Mean Signed Contribution": 1.3746035250598261e-09,
+                        "Relative Importance (%)": 0.031018909993334533
+                    },
+                    {
+                        "Feature": "PRESS_IONGAUGE_RUN_S",
+                        "Mean Absolute Contribution": 3.449811727960671e-08,
+                        "Mean Signed Contribution": 6.921785161089131e-09,
+                        "Relative Importance (%)": 0.029935387482493317
+                    },
+                    {
+                        "Feature": "POWER_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 3.216140086223757e-08,
+                        "Mean Signed Contribution": -1.757252805641934e-09,
+                        "Relative Importance (%)": 0.0279077257749369
+                    },
+                    {
+                        "Feature": "T_RUN",
+                        "Mean Absolute Contribution": 3.15259686599383e-08,
+                        "Mean Signed Contribution": -8.152845544799712e-09,
+                        "Relative Importance (%)": 0.02735633599790906
+                    },
+                    {
+                        "Feature": "AMPS_TARGET_RUN_S",
+                        "Mean Absolute Contribution": 3.073176708394855e-08,
+                        "Mean Signed Contribution": -9.200351031300668e-10,
+                        "Relative Importance (%)": 0.026667175725081236
+                    },
+                    {
+                        "Feature": "WAFERCOUNT_MR",
+                        "Mean Absolute Contribution": 1.5504561099616046e-08,
+                        "Mean Signed Contribution": 8.98723652382117e-10,
+                        "Relative Importance (%)": 0.013453923891010966
+                    },
+                    {
+                        "Feature": "PROCESS_STATE_RUN_X",
+                        "Mean Absolute Contribution": 1.4744109407857666e-08,
+                        "Mean Signed Contribution": -2.965143803639756e-09,
+                        "Relative Importance (%)": 0.012794049734111346
+                    },
+                    {
+                        "Feature": "VOLTS_TARGET_DEP1_G",
+                        "Mean Absolute Contribution": 1.3439141394725404e-08,
+                        "Mean Signed Contribution": 1.2559501761987159e-09,
+                        "Relative Importance (%)": 0.011661677123491624
+                    },
+                    {
+                        "Feature": "WAFERCOUNT_RECIPE_MR",
+                        "Mean Absolute Contribution": 0.0,
+                        "Mean Signed Contribution": 0.0,
+                        "Relative Importance (%)": 0.0
+                    }
+                ]
+            }
+        },
+        "cross_target_comparison": {
+            "shared_apc_features": 110,
+            "spearman_rank_correlation": 0.8924599328269053,
+            "top10_overlap_count": 8,
+            "shared_top10_features": [
+                "AMPS_TARGET_20_90_DEP1_SPS_X",
+                "DCBIAS_PLATEN_DEP1_A",
+                "LIFE_TARGET_DEP1_A",
+                "LIFE_TARGET_DEP1_S",
+                "T_DEP1_PROCESS",
+                "T_RECIPE_ENG",
+                "VOLTS_TARGET_RE_A",
+                "VOLTS_TARGET_RUN_A"
+            ]
+        }
+    },
+    "engine_loading_seconds": 0.07182050000119489,
+    "engine_benchmarks": [
+        {
+            "Scenario": "Single-record dual prediction",
+            "Records": 1,
+            "Repetitions": 20,
+            "Median Latency (ms)": 65.6487999985984,
+            "P95 Latency (ms)": 88.18049000146858,
+            "Minimum Latency (ms)": 59.873400001379196
+        },
+        {
+            "Scenario": "32-record dual prediction",
+            "Records": 32,
+            "Repetitions": 20,
+            "Median Latency (ms)": 81.42345000305795,
+            "P95 Latency (ms)": 89.58781500332407,
+            "Minimum Latency (ms)": 73.04410000506323
+        },
+        {
+            "Scenario": "256-record dual prediction",
+            "Records": 256,
+            "Repetitions": 20,
+            "Median Latency (ms)": 174.7561499942094,
+            "P95 Latency (ms)": 201.19376999755335,
+            "Minimum Latency (ms)": 159.42139999970095
+        },
+        {
+            "Scenario": "Single-record dual explanation",
+            "Records": 1,
+            "Repetitions": 20,
+            "Median Latency (ms)": 147.49129999472643,
+            "P95 Latency (ms)": 195.60321499848223,
+            "Minimum Latency (ms)": 130.66450000042096
+        }
+    ],
+    "automated_tests": {
+        "return_code": 0,
+        "passed": true,
+        "summary_lines": [
+            "============================= 22 passed in 5.54s =============================="
+        ]
+    },
+    "independent_process_verification": true,
+    "test_based_model_selection": false,
+    "calibrated_prediction_uncertainty": false,
+    "binary_artifacts_committed_to_git": false,
+    "limitations": [
+        "Joblib bundles must originate from trusted sources.",
+        "Checksums detect changes but do not authenticate origin.",
+        "Exact compatible dependency versions are required.",
+        "Synthetic robustness tests establish software behaviour rather than predictive accuracy.",
+        "Final global explanations describe model behaviour on eligible development observations.",
+        "Inference benchmarks exclude application-level overhead.",
+        "No external industrial validation was performed."
+    ]
+}

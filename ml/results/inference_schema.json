@@ -1,0 +1,1159 @@
+{
+    "schema_version": "1.0.0",
+    "apc_features": [
+        "AMPS_TARGET_20_90_DELTA_DEP1",
+        "AMPS_TARGET_20_90_DEP1_M",
+        "AMPS_TARGET_20_90_DEP1_SPS",
+        "AMPS_TARGET_20_90_DEP1_SPS_M",
+        "AMPS_TARGET_20_90_DEP1_SPS_X",
+        "AMPS_TARGET_20_90_DEP1_X",
+        "AMPS_TARGET_20_95_DELTA_DEP1",
+        "AMPS_TARGET_20_95_DEP1_M",
+        "AMPS_TARGET_20_95_DEP1_SPS",
+        "AMPS_TARGET_20_95_DEP1_SPS_M",
+        "AMPS_TARGET_20_95_DEP1_SPS_X",
+        "AMPS_TARGET_20_95_DEP1_X",
+        "AMPS_TARGET_DEP1_A",
+        "AMPS_TARGET_DEP1_A_MR",
+        "AMPS_TARGET_DEP1_S",
+        "AMPS_TARGET_RECIPE_A",
+        "AMPS_TARGET_RUN_A",
+        "AMPS_TARGET_RUN_S",
+        "AMPS_TARGET_SPS_DEP1_A",
+        "AMPS_TARGET_SPS_DEP1_S",
+        "DCBIAS_PLATEN_DEP1_A",
+        "DCBIAS_PLATEN_DEP1_A_MR",
+        "DCBIAS_PLATEN_DEP1_I",
+        "DCBIAS_PLATEN_DEP1_I_MR",
+        "DCBIAS_PLATEN_DEP1_S",
+        "FLOW_CHAMBER_RUN_A",
+        "FLOW_TARGET_RUN_A",
+        "GAS1_DEP1_A",
+        "GAS1_DEP1_S",
+        "GAS2_DEP1_A",
+        "GAS2_DEP1_S",
+        "LIFE_CRYO_RUN_A",
+        "LIFE_CRYO_RUN_S",
+        "LIFE_SHIELDING_RUN_A",
+        "LIFE_SHIELDING_RUN_S",
+        "LIFE_TARGET_DEP1_A",
+        "LIFE_TARGET_DEP1_A_MR",
+        "LIFE_TARGET_DEP1_S",
+        "LIFE_TARGET_RUN_A",
+        "LIFE_TARGET_RUN_A_MR",
+        "LIFE_TARGET_RUN_I",
+        "LIFE_TARGET_RUN_S",
+        "OHM_TARGET_DEP1_A_A",
+        "POWER_SPS_DELTA_DEP1_A",
+        "POWER_TARGET_DEP1_A",
+        "POWER_TARGET_DEP1_A_MR",
+        "POWER_TARGET_DEP1_R",
+        "POWER_TARGET_DEP1_R_ENG",
+        "POWER_TARGET_DEP1_S",
+        "POWER_TARGET_RUN_A",
+        "POWER_TARGET_RUN_S",
+        "POWER_TARGET_SPS_DEP1_A",
+        "PRESS_CHAMBER_DEP1_A",
+        "PRESS_CHAMBER_DEP1_M",
+        "PRESS_CHAMBER_DEP1_R",
+        "PRESS_CHAMBER_DEP1_S",
+        "PRESS_IONGAUGE_BP_I",
+        "PRESS_IONGAUGE_BP_I_ENG",
+        "PRESS_IONGAUGE_BP_I_ENG1",
+        "PRESS_IONGAUGE_RUN_A",
+        "PRESS_IONGAUGE_RUN_I",
+        "PRESS_IONGAUGE_RUN_S",
+        "PRESS_PUMP2BASE_I",
+        "PRESS_TRANSFER_RUN_I",
+        "PRESS_TRANSFER_RUN_X",
+        "PROCESS_STATE_RUN_X",
+        "RGA_FUNCTION_DAY",
+        "SPEED_CRYO_RUN_A",
+        "SPEED_CRYO_RUN_S",
+        "SPEED_MAGNETRON_DEP1_A",
+        "SPEED_MAGNETRON_DEP1_S",
+        "TEMP_CRYOFIRSTSTAGE_RUN_X",
+        "TEMP_CRYOSECONDSTAGE_RUN_X",
+        "TEMP_PLATEN_DEP1_A",
+        "TEMP_PLATEN_DEP1_S",
+        "TEMP_PLATEN_DEP1_X",
+        "TEMP_PLATEN_DIFF_SAFETY_A",
+        "TEMP_PLATEN_RUN_A",
+        "TEMP_PLATEN_RUN_R",
+        "TEMP_PLATEN_RUN_S",
+        "TEMP_PLATEN_SAFETY_RUN_A",
+        "TEMP_PLATEN_SAFETY_RUN_S",
+        "TIME_POST_PROCESS_X",
+        "TIME_PREV_DIFF_I",
+        "TIME_PREV_DIFF_X",
+        "TIME_PRE_PROCESS_X",
+        "T_DEP1_PROCESS",
+        "T_DEP1_PROCESS_MR",
+        "T_LL_DEGAS_ST1",
+        "T_LL_DEGAS_ST1_MR",
+        "T_RECIPE",
+        "T_RECIPE_ENG",
+        "T_RUN",
+        "T_RUN_ENG",
+        "T_RUN_PRE1",
+        "T_RUN_PRE2",
+        "T_RUN_PRE_PROCESS",
+        "UTILISATION_TARGET_RUN_A",
+        "UTILISATION_TARGET_RUN_S",
+        "VOLTS_TARGET_DEP1_5SEC_S",
+        "VOLTS_TARGET_DEP1_A",
+        "VOLTS_TARGET_DEP1_G",
+        "VOLTS_TARGET_DEP1_R",
+        "VOLTS_TARGET_DEP1_S",
+        "VOLTS_TARGET_RE_A",
+        "VOLTS_TARGET_RUN_A",
+        "VOLTS_TARGET_RUN_S",
+        "VOLTS_TARGET_SPS_DEP1_A",
+        "WAFERCOUNT_MR",
+        "WAFERCOUNT_RECIPE_MR"
+    ],
+    "apc_feature_count": 110,
+    "required_columns": [
+        "AMPS_TARGET_20_90_DELTA_DEP1",
+        "AMPS_TARGET_20_90_DEP1_M",
+        "AMPS_TARGET_20_90_DEP1_SPS",
+        "AMPS_TARGET_20_90_DEP1_SPS_M",
+        "AMPS_TARGET_20_90_DEP1_SPS_X",
+        "AMPS_TARGET_20_90_DEP1_X",
+        "AMPS_TARGET_20_95_DELTA_DEP1",
+        "AMPS_TARGET_20_95_DEP1_M",
+        "AMPS_TARGET_20_95_DEP1_SPS",
+        "AMPS_TARGET_20_95_DEP1_SPS_M",
+        "AMPS_TARGET_20_95_DEP1_SPS_X",
+        "AMPS_TARGET_20_95_DEP1_X",
+        "AMPS_TARGET_DEP1_A",
+        "AMPS_TARGET_DEP1_A_MR",
+        "AMPS_TARGET_DEP1_S",
+        "AMPS_TARGET_RECIPE_A",
+        "AMPS_TARGET_RUN_A",
+        "AMPS_TARGET_RUN_S",
+        "AMPS_TARGET_SPS_DEP1_A",
+        "AMPS_TARGET_SPS_DEP1_S",
+        "DCBIAS_PLATEN_DEP1_A",
+        "DCBIAS_PLATEN_DEP1_A_MR",
+        "DCBIAS_PLATEN_DEP1_I",
+        "DCBIAS_PLATEN_DEP1_I_MR",
+        "DCBIAS_PLATEN_DEP1_S",
+        "FLOW_CHAMBER_RUN_A",
+        "FLOW_TARGET_RUN_A",
+        "GAS1_DEP1_A",
+        "GAS1_DEP1_S",
+        "GAS2_DEP1_A",
+        "GAS2_DEP1_S",
+        "LIFE_CRYO_RUN_A",
+        "LIFE_CRYO_RUN_S",
+        "LIFE_SHIELDING_RUN_A",
+        "LIFE_SHIELDING_RUN_S",
+        "LIFE_TARGET_DEP1_A",
+        "LIFE_TARGET_DEP1_A_MR",
+        "LIFE_TARGET_DEP1_S",
+        "LIFE_TARGET_RUN_A",
+        "LIFE_TARGET_RUN_A_MR",
+        "LIFE_TARGET_RUN_I",
+        "LIFE_TARGET_RUN_S",
+        "OHM_TARGET_DEP1_A_A",
+        "POWER_SPS_DELTA_DEP1_A",
+        "POWER_TARGET_DEP1_A",
+        "POWER_TARGET_DEP1_A_MR",
+        "POWER_TARGET_DEP1_R",
+        "POWER_TARGET_DEP1_R_ENG",
+        "POWER_TARGET_DEP1_S",
+        "POWER_TARGET_RUN_A",
+        "POWER_TARGET_RUN_S",
+        "POWER_TARGET_SPS_DEP1_A",
+        "PRESS_CHAMBER_DEP1_A",
+        "PRESS_CHAMBER_DEP1_M",
+        "PRESS_CHAMBER_DEP1_R",
+        "PRESS_CHAMBER_DEP1_S",
+        "PRESS_IONGAUGE_BP_I",
+        "PRESS_IONGAUGE_BP_I_ENG",
+        "PRESS_IONGAUGE_BP_I_ENG1",
+        "PRESS_IONGAUGE_RUN_A",
+        "PRESS_IONGAUGE_RUN_I",
+        "PRESS_IONGAUGE_RUN_S",
+        "PRESS_PUMP2BASE_I",
+        "PRESS_TRANSFER_RUN_I",
+        "PRESS_TRANSFER_RUN_X",
+        "PROCESS_STATE_RUN_X",
+        "RGA_FUNCTION_DAY",
+        "SPEED_CRYO_RUN_A",
+        "SPEED_CRYO_RUN_S",
+        "SPEED_MAGNETRON_DEP1_A",
+        "SPEED_MAGNETRON_DEP1_S",
+        "TEMP_CRYOFIRSTSTAGE_RUN_X",
+        "TEMP_CRYOSECONDSTAGE_RUN_X",
+        "TEMP_PLATEN_DEP1_A",
+        "TEMP_PLATEN_DEP1_S",
+        "TEMP_PLATEN_DEP1_X",
+        "TEMP_PLATEN_DIFF_SAFETY_A",
+        "TEMP_PLATEN_RUN_A",
+        "TEMP_PLATEN_RUN_R",
+        "TEMP_PLATEN_RUN_S",
+        "TEMP_PLATEN_SAFETY_RUN_A",
+        "TEMP_PLATEN_SAFETY_RUN_S",
+        "TIME_POST_PROCESS_X",
+        "TIME_PREV_DIFF_I",
+        "TIME_PREV_DIFF_X",
+        "TIME_PRE_PROCESS_X",
+        "T_DEP1_PROCESS",
+        "T_DEP1_PROCESS_MR",
+        "T_LL_DEGAS_ST1",
+        "T_LL_DEGAS_ST1_MR",
+        "T_RECIPE",
+        "T_RECIPE_ENG",
+        "T_RUN",
+        "T_RUN_ENG",
+        "T_RUN_PRE1",
+        "T_RUN_PRE2",
+        "T_RUN_PRE_PROCESS",
+        "UTILISATION_TARGET_RUN_A",
+        "UTILISATION_TARGET_RUN_S",
+        "VOLTS_TARGET_DEP1_5SEC_S",
+        "VOLTS_TARGET_DEP1_A",
+        "VOLTS_TARGET_DEP1_G",
+        "VOLTS_TARGET_DEP1_R",
+        "VOLTS_TARGET_DEP1_S",
+        "VOLTS_TARGET_RE_A",
+        "VOLTS_TARGET_RUN_A",
+        "VOLTS_TARGET_RUN_S",
+        "VOLTS_TARGET_SPS_DEP1_A",
+        "WAFERCOUNT_MR",
+        "WAFERCOUNT_RECIPE_MR",
+        "equipment"
+    ],
+    "model_inputs": {
+        "mean_thickness": [
+            "AMPS_TARGET_20_90_DELTA_DEP1",
+            "AMPS_TARGET_20_90_DEP1_M",
+            "AMPS_TARGET_20_90_DEP1_SPS",
+            "AMPS_TARGET_20_90_DEP1_SPS_M",
+            "AMPS_TARGET_20_90_DEP1_SPS_X",
+            "AMPS_TARGET_20_90_DEP1_X",
+            "AMPS_TARGET_20_95_DELTA_DEP1",
+            "AMPS_TARGET_20_95_DEP1_M",
+            "AMPS_TARGET_20_95_DEP1_SPS",
+            "AMPS_TARGET_20_95_DEP1_SPS_M",
+            "AMPS_TARGET_20_95_DEP1_SPS_X",
+            "AMPS_TARGET_20_95_DEP1_X",
+            "AMPS_TARGET_DEP1_A",
+            "AMPS_TARGET_DEP1_A_MR",
+            "AMPS_TARGET_DEP1_S",
+            "AMPS_TARGET_RECIPE_A",
+            "AMPS_TARGET_RUN_A",
+            "AMPS_TARGET_RUN_S",
+            "AMPS_TARGET_SPS_DEP1_A",
+            "AMPS_TARGET_SPS_DEP1_S",
+            "DCBIAS_PLATEN_DEP1_A",
+            "DCBIAS_PLATEN_DEP1_A_MR",
+            "DCBIAS_PLATEN_DEP1_I",
+            "DCBIAS_PLATEN_DEP1_I_MR",
+            "DCBIAS_PLATEN_DEP1_S",
+            "FLOW_CHAMBER_RUN_A",
+            "FLOW_TARGET_RUN_A",
+            "GAS1_DEP1_A",
+            "GAS1_DEP1_S",
+            "GAS2_DEP1_A",
+            "GAS2_DEP1_S",
+            "LIFE_CRYO_RUN_A",
+            "LIFE_CRYO_RUN_S",
+            "LIFE_SHIELDING_RUN_A",
+            "LIFE_SHIELDING_RUN_S",
+            "LIFE_TARGET_DEP1_A",
+            "LIFE_TARGET_DEP1_A_MR",
+            "LIFE_TARGET_DEP1_S",
+            "LIFE_TARGET_RUN_A",
+            "LIFE_TARGET_RUN_A_MR",
+            "LIFE_TARGET_RUN_I",
+            "LIFE_TARGET_RUN_S",
+            "OHM_TARGET_DEP1_A_A",
+            "POWER_SPS_DELTA_DEP1_A",
+            "POWER_TARGET_DEP1_A",
+            "POWER_TARGET_DEP1_A_MR",
+            "POWER_TARGET_DEP1_R",
+            "POWER_TARGET_DEP1_R_ENG",
+            "POWER_TARGET_DEP1_S",
+            "POWER_TARGET_RUN_A",
+            "POWER_TARGET_RUN_S",
+            "POWER_TARGET_SPS_DEP1_A",
+            "PRESS_CHAMBER_DEP1_A",
+            "PRESS_CHAMBER_DEP1_M",
+            "PRESS_CHAMBER_DEP1_R",
+            "PRESS_CHAMBER_DEP1_S",
+            "PRESS_IONGAUGE_BP_I",
+            "PRESS_IONGAUGE_BP_I_ENG",
+            "PRESS_IONGAUGE_BP_I_ENG1",
+            "PRESS_IONGAUGE_RUN_A",
+            "PRESS_IONGAUGE_RUN_I",
+            "PRESS_IONGAUGE_RUN_S",
+            "PRESS_PUMP2BASE_I",
+            "PRESS_TRANSFER_RUN_I",
+            "PRESS_TRANSFER_RUN_X",
+            "PROCESS_STATE_RUN_X",
+            "RGA_FUNCTION_DAY",
+            "SPEED_CRYO_RUN_A",
+            "SPEED_CRYO_RUN_S",
+            "SPEED_MAGNETRON_DEP1_A",
+            "SPEED_MAGNETRON_DEP1_S",
+            "TEMP_CRYOFIRSTSTAGE_RUN_X",
+            "TEMP_CRYOSECONDSTAGE_RUN_X",
+            "TEMP_PLATEN_DEP1_A",
+            "TEMP_PLATEN_DEP1_S",
+            "TEMP_PLATEN_DEP1_X",
+            "TEMP_PLATEN_DIFF_SAFETY_A",
+            "TEMP_PLATEN_RUN_A",
+            "TEMP_PLATEN_RUN_R",
+            "TEMP_PLATEN_RUN_S",
+            "TEMP_PLATEN_SAFETY_RUN_A",
+            "TEMP_PLATEN_SAFETY_RUN_S",
+            "TIME_POST_PROCESS_X",
+            "TIME_PREV_DIFF_I",
+            "TIME_PREV_DIFF_X",
+            "TIME_PRE_PROCESS_X",
+            "T_DEP1_PROCESS",
+            "T_DEP1_PROCESS_MR",
+            "T_LL_DEGAS_ST1",
+            "T_LL_DEGAS_ST1_MR",
+            "T_RECIPE",
+            "T_RECIPE_ENG",
+            "T_RUN",
+            "T_RUN_ENG",
+            "T_RUN_PRE1",
+            "T_RUN_PRE2",
+            "T_RUN_PRE_PROCESS",
+            "UTILISATION_TARGET_RUN_A",
+            "UTILISATION_TARGET_RUN_S",
+            "VOLTS_TARGET_DEP1_5SEC_S",
+            "VOLTS_TARGET_DEP1_A",
+            "VOLTS_TARGET_DEP1_G",
+            "VOLTS_TARGET_DEP1_R",
+            "VOLTS_TARGET_DEP1_S",
+            "VOLTS_TARGET_RE_A",
+            "VOLTS_TARGET_RUN_A",
+            "VOLTS_TARGET_RUN_S",
+            "VOLTS_TARGET_SPS_DEP1_A",
+            "WAFERCOUNT_MR",
+            "WAFERCOUNT_RECIPE_MR"
+        ],
+        "mean_resistance": [
+            "AMPS_TARGET_20_90_DELTA_DEP1",
+            "AMPS_TARGET_20_90_DEP1_M",
+            "AMPS_TARGET_20_90_DEP1_SPS",
+            "AMPS_TARGET_20_90_DEP1_SPS_M",
+            "AMPS_TARGET_20_90_DEP1_SPS_X",
+            "AMPS_TARGET_20_90_DEP1_X",
+            "AMPS_TARGET_20_95_DELTA_DEP1",
+            "AMPS_TARGET_20_95_DEP1_M",
+            "AMPS_TARGET_20_95_DEP1_SPS",
+            "AMPS_TARGET_20_95_DEP1_SPS_M",
+            "AMPS_TARGET_20_95_DEP1_SPS_X",
+            "AMPS_TARGET_20_95_DEP1_X",
+            "AMPS_TARGET_DEP1_A",
+            "AMPS_TARGET_DEP1_A_MR",
+            "AMPS_TARGET_DEP1_S",
+            "AMPS_TARGET_RECIPE_A",
+            "AMPS_TARGET_RUN_A",
+            "AMPS_TARGET_RUN_S",
+            "AMPS_TARGET_SPS_DEP1_A",
+            "AMPS_TARGET_SPS_DEP1_S",
+            "DCBIAS_PLATEN_DEP1_A",
+            "DCBIAS_PLATEN_DEP1_A_MR",
+            "DCBIAS_PLATEN_DEP1_I",
+            "DCBIAS_PLATEN_DEP1_I_MR",
+            "DCBIAS_PLATEN_DEP1_S",
+            "FLOW_CHAMBER_RUN_A",
+            "FLOW_TARGET_RUN_A",
+            "GAS1_DEP1_A",
+            "GAS1_DEP1_S",
+            "GAS2_DEP1_A",
+            "GAS2_DEP1_S",
+            "LIFE_CRYO_RUN_A",
+            "LIFE_CRYO_RUN_S",
+            "LIFE_SHIELDING_RUN_A",
+            "LIFE_SHIELDING_RUN_S",
+            "LIFE_TARGET_DEP1_A",
+            "LIFE_TARGET_DEP1_A_MR",
+            "LIFE_TARGET_DEP1_S",
+            "LIFE_TARGET_RUN_A",
+            "LIFE_TARGET_RUN_A_MR",
+            "LIFE_TARGET_RUN_I",
+            "LIFE_TARGET_RUN_S",
+            "OHM_TARGET_DEP1_A_A",
+            "POWER_SPS_DELTA_DEP1_A",
+            "POWER_TARGET_DEP1_A",
+            "POWER_TARGET_DEP1_A_MR",
+            "POWER_TARGET_DEP1_R",
+            "POWER_TARGET_DEP1_R_ENG",
+            "POWER_TARGET_DEP1_S",
+            "POWER_TARGET_RUN_A",
+            "POWER_TARGET_RUN_S",
+            "POWER_TARGET_SPS_DEP1_A",
+            "PRESS_CHAMBER_DEP1_A",
+            "PRESS_CHAMBER_DEP1_M",
+            "PRESS_CHAMBER_DEP1_R",
+            "PRESS_CHAMBER_DEP1_S",
+            "PRESS_IONGAUGE_BP_I",
+            "PRESS_IONGAUGE_BP_I_ENG",
+            "PRESS_IONGAUGE_BP_I_ENG1",
+            "PRESS_IONGAUGE_RUN_A",
+            "PRESS_IONGAUGE_RUN_I",
+            "PRESS_IONGAUGE_RUN_S",
+            "PRESS_PUMP2BASE_I",
+            "PRESS_TRANSFER_RUN_I",
+            "PRESS_TRANSFER_RUN_X",
+            "PROCESS_STATE_RUN_X",
+            "RGA_FUNCTION_DAY",
+            "SPEED_CRYO_RUN_A",
+            "SPEED_CRYO_RUN_S",
+            "SPEED_MAGNETRON_DEP1_A",
+            "SPEED_MAGNETRON_DEP1_S",
+            "TEMP_CRYOFIRSTSTAGE_RUN_X",
+            "TEMP_CRYOSECONDSTAGE_RUN_X",
+            "TEMP_PLATEN_DEP1_A",
+            "TEMP_PLATEN_DEP1_S",
+            "TEMP_PLATEN_DEP1_X",
+            "TEMP_PLATEN_DIFF_SAFETY_A",
+            "TEMP_PLATEN_RUN_A",
+            "TEMP_PLATEN_RUN_R",
+            "TEMP_PLATEN_RUN_S",
+            "TEMP_PLATEN_SAFETY_RUN_A",
+            "TEMP_PLATEN_SAFETY_RUN_S",
+            "TIME_POST_PROCESS_X",
+            "TIME_PREV_DIFF_I",
+            "TIME_PREV_DIFF_X",
+            "TIME_PRE_PROCESS_X",
+            "T_DEP1_PROCESS",
+            "T_DEP1_PROCESS_MR",
+            "T_LL_DEGAS_ST1",
+            "T_LL_DEGAS_ST1_MR",
+            "T_RECIPE",
+            "T_RECIPE_ENG",
+            "T_RUN",
+            "T_RUN_ENG",
+            "T_RUN_PRE1",
+            "T_RUN_PRE2",
+            "T_RUN_PRE_PROCESS",
+            "UTILISATION_TARGET_RUN_A",
+            "UTILISATION_TARGET_RUN_S",
+            "VOLTS_TARGET_DEP1_5SEC_S",
+            "VOLTS_TARGET_DEP1_A",
+            "VOLTS_TARGET_DEP1_G",
+            "VOLTS_TARGET_DEP1_R",
+            "VOLTS_TARGET_DEP1_S",
+            "VOLTS_TARGET_RE_A",
+            "VOLTS_TARGET_RUN_A",
+            "VOLTS_TARGET_RUN_S",
+            "VOLTS_TARGET_SPS_DEP1_A",
+            "WAFERCOUNT_MR",
+            "WAFERCOUNT_RECIPE_MR",
+            "equipment"
+        ]
+    },
+    "fields": {
+        "AMPS_TARGET_20_90_DELTA_DEP1": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_90_DEP1_M": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_90_DEP1_SPS": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_90_DEP1_SPS_M": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_90_DEP1_SPS_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_90_DEP1_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_95_DELTA_DEP1": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_95_DEP1_M": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_95_DEP1_SPS": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_95_DEP1_SPS_M": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_95_DEP1_SPS_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_20_95_DEP1_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_DEP1_A_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_RECIPE_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_SPS_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "AMPS_TARGET_SPS_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "DCBIAS_PLATEN_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "DCBIAS_PLATEN_DEP1_A_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "DCBIAS_PLATEN_DEP1_I": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "DCBIAS_PLATEN_DEP1_I_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "DCBIAS_PLATEN_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "FLOW_CHAMBER_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "FLOW_TARGET_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "GAS1_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "GAS1_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "GAS2_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "GAS2_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_CRYO_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_CRYO_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_SHIELDING_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_SHIELDING_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_TARGET_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_TARGET_DEP1_A_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_TARGET_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_TARGET_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_TARGET_RUN_A_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_TARGET_RUN_I": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "LIFE_TARGET_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "OHM_TARGET_DEP1_A_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_SPS_DELTA_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_TARGET_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_TARGET_DEP1_A_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_TARGET_DEP1_R": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_TARGET_DEP1_R_ENG": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_TARGET_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_TARGET_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_TARGET_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "POWER_TARGET_SPS_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_CHAMBER_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_CHAMBER_DEP1_M": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_CHAMBER_DEP1_R": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_CHAMBER_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_IONGAUGE_BP_I": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_IONGAUGE_BP_I_ENG": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_IONGAUGE_BP_I_ENG1": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_IONGAUGE_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_IONGAUGE_RUN_I": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_IONGAUGE_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_PUMP2BASE_I": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_TRANSFER_RUN_I": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PRESS_TRANSFER_RUN_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "PROCESS_STATE_RUN_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "RGA_FUNCTION_DAY": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "SPEED_CRYO_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "SPEED_CRYO_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "SPEED_MAGNETRON_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "SPEED_MAGNETRON_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_CRYOFIRSTSTAGE_RUN_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_CRYOSECONDSTAGE_RUN_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_DEP1_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_DIFF_SAFETY_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_RUN_R": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_SAFETY_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TEMP_PLATEN_SAFETY_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TIME_POST_PROCESS_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TIME_PREV_DIFF_I": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TIME_PREV_DIFF_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "TIME_PRE_PROCESS_X": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_DEP1_PROCESS": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_DEP1_PROCESS_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_LL_DEGAS_ST1": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_LL_DEGAS_ST1_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_RECIPE": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_RECIPE_ENG": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_RUN": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_RUN_ENG": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_RUN_PRE1": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_RUN_PRE2": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "T_RUN_PRE_PROCESS": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "UTILISATION_TARGET_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "UTILISATION_TARGET_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_DEP1_5SEC_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_DEP1_G": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_DEP1_R": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_DEP1_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_RE_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_RUN_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_RUN_S": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "VOLTS_TARGET_SPS_DEP1_A": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "WAFERCOUNT_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "WAFERCOUNT_RECIPE_MR": {
+            "type": "number",
+            "required": true,
+            "nullable": true,
+            "allow_infinity": false
+        },
+        "equipment": {
+            "type": "string",
+            "required": true,
+            "nullable": true,
+            "known_categories": [
+                "equipment_1",
+                "equipment_10",
+                "equipment_11",
+                "equipment_12",
+                "equipment_13",
+                "equipment_14",
+                "equipment_15",
+                "equipment_16",
+                "equipment_2",
+                "equipment_3",
+                "equipment_4",
+                "equipment_5",
+                "equipment_6",
+                "equipment_7",
+                "equipment_8",
+                "equipment_9"
+            ],
+            "unknown_category_policy": "allow_with_warning"
+        }
+    },
+    "all_apc_missing_policy": "reject_record",
+    "unexpected_columns_policy": "reject",
+    "numeric_string_policy": "reject",
+    "duplicate_columns_policy": "reject",
+    "missing_columns_policy": "reject",
+    "output_targets": {
+        "mean_thickness": {
+            "type": "number",
+            "output_scale": "dataset_units",
+            "physical_unit_verified": false
+        },
+        "mean_resistance": {
+            "type": "number",
+            "output_scale": "dataset_units",
+            "physical_unit_verified": false
+        }
+    }
+}
