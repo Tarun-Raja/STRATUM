@@ -1,0 +1,89 @@
+{
+    "project": "STRATUM",
+    "target": "mean_resistance",
+    "dataset_sha256": "32af2d4508da45b0c7235db7b6923f3e1b19729d91e3b593a0d0135eba6a74b1",
+    "selection_partition": "original_training_chronological_cv",
+    "primary_metric": "Mean CV MAE",
+    "selection_policy": "Minimum eligible mean chronological CV MAE",
+    "target_transform": {
+        "method": "StandardScaler",
+        "fit_scope": "Training targets only",
+        "inverse_transform_predictions": true,
+        "applies_to": "ML candidates",
+        "baseline_target_transform": null
+    },
+    "boosting_round_policy": "Median internally selected CV boosting rounds",
+    "selected_candidate": {
+        "name": "RES-XGB-2",
+        "algorithm": "XGBoost",
+        "include_equipment": true,
+        "parameters": {
+            "missing_strategy": "median",
+            "max_depth": 4,
+            "learning_rate": 0.025,
+            "n_estimators": 837,
+            "min_child_weight": 5,
+            "reg_alpha": 0.1,
+            "reg_lambda": 5.0,
+            "subsample": 0.8,
+            "colsample_bytree": 0.8,
+            "gamma": 0.0,
+            "random_state": 42
+        }
+    },
+    "family_leader_candidates": {
+        "Global Mean": {
+            "name": "Global Mean",
+            "algorithm": "Global Mean",
+            "include_equipment": false,
+            "parameters": {}
+        },
+        "RES-XGB-2": {
+            "name": "RES-XGB-2",
+            "algorithm": "XGBoost",
+            "include_equipment": true,
+            "parameters": {
+                "missing_strategy": "median",
+                "max_depth": 4,
+                "learning_rate": 0.025,
+                "n_estimators": 837,
+                "min_child_weight": 5,
+                "reg_alpha": 0.1,
+                "reg_lambda": 5.0,
+                "subsample": 0.8,
+                "colsample_bytree": 0.8,
+                "gamma": 0.0,
+                "random_state": 42
+            }
+        },
+        "RES-RF-1": {
+            "name": "RES-RF-1",
+            "algorithm": "Random Forest",
+            "include_equipment": false,
+            "parameters": {
+                "n_estimators": 200,
+                "max_depth": null,
+                "min_samples_leaf": 1,
+                "max_features": 0.7,
+                "random_state": 42
+            }
+        },
+        "RES-Ridge-2": {
+            "name": "RES-Ridge-2",
+            "algorithm": "Ridge",
+            "include_equipment": true,
+            "parameters": {
+                "alpha": 10.0,
+                "clip_z": 5.0
+            }
+        }
+    },
+    "selected_mean_cv_mae": 2.7519302916272237e-05,
+    "selected_std_cv_mae": 4.1828811669954525e-06,
+    "selected_mean_cv_rmse": 4.06111475095872e-05,
+    "selected_mean_cv_r2": 0.45467530633238934,
+    "best_baseline": "Global Mean",
+    "baseline_mean_cv_mae": 4.2082654003481655e-05,
+    "selected_improvement_pct": 34.606541417289264,
+    "cv_folds": 5
+}
