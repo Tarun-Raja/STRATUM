@@ -1,0 +1,690 @@
+{
+    "project": "STRATUM",
+    "dataset_sha256": "32af2d4508da45b0c7235db7b6923f3e1b19729d91e3b593a0d0135eba6a74b1",
+    "development_population_sha256": "42c3b7f4fce9c57743b3abf78b64f34582decb131d72e70a017d6e5bef0f6f7d",
+    "development_records": 4165,
+    "z_threshold": 5.0,
+    "feature_statistics": {
+        "AMPS_TARGET_20_90_DELTA_DEP1": {
+            "mean": 0.36776407541815925,
+            "std": 0.19149796834413,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_20_90_DEP1_M": {
+            "mean": 16.13421068624872,
+            "std": 1.1860235526953748,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_20_90_DEP1_SPS": {
+            "mean": 0.43297683217632427,
+            "std": 0.2051580881104549,
+            "observed_records": 1613,
+            "missing_fraction": 0.6127250900360144
+        },
+        "AMPS_TARGET_20_90_DEP1_SPS_M": {
+            "mean": 25.663769284773345,
+            "std": 1.9035467300218885,
+            "observed_records": 1613,
+            "missing_fraction": 0.6127250900360144
+        },
+        "AMPS_TARGET_20_90_DEP1_SPS_X": {
+            "mean": 3.5005565485740195,
+            "std": 0.2575471401483098,
+            "observed_records": 1613,
+            "missing_fraction": 0.6127250900360144
+        },
+        "AMPS_TARGET_20_90_DEP1_X": {
+            "mean": 36.20591350866444,
+            "std": 2.65439248439043,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_20_95_DELTA_DEP1": {
+            "mean": 0.36430894996299107,
+            "std": 0.18846998539473983,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_20_95_DEP1_M": {
+            "mean": 28.896300906785957,
+            "std": 2.124092165388307,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_20_95_DEP1_SPS": {
+            "mean": 0.06491310142280361,
+            "std": 0.030577480652146195,
+            "observed_records": 1613,
+            "missing_fraction": 0.6127250900360144
+        },
+        "AMPS_TARGET_20_95_DEP1_SPS_M": {
+            "mean": 16.573887691156386,
+            "std": 1.2287776117872136,
+            "observed_records": 1613,
+            "missing_fraction": 0.6127250900360144
+        },
+        "AMPS_TARGET_20_95_DEP1_SPS_X": {
+            "mean": 13.782602789896922,
+            "std": 1.0141156106195044,
+            "observed_records": 1613,
+            "missing_fraction": 0.6127250900360144
+        },
+        "AMPS_TARGET_20_95_DEP1_X": {
+            "mean": 34.393666141448676,
+            "std": 2.5221293968133613,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_DEP1_A": {
+            "mean": 23.683352068414802,
+            "std": 1.7390764967176047,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_DEP1_A_MR": {
+            "mean": 0.13717078610262484,
+            "std": 1.8256359567237548,
+            "observed_records": 4038,
+            "missing_fraction": 0.0304921968787515
+        },
+        "AMPS_TARGET_DEP1_S": {
+            "mean": 0.16848129919767918,
+            "std": 0.12119923440746713,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_RECIPE_A": {
+            "mean": 5.775488951896398,
+            "std": 0.6362313637613646,
+            "observed_records": 3959,
+            "missing_fraction": 0.049459783913565425
+        },
+        "AMPS_TARGET_RUN_A": {
+            "mean": 0.7750643946061588,
+            "std": 0.8932805975241292,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_RUN_S": {
+            "mean": 21.62879920229606,
+            "std": 9.371020104217306,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_SPS_DEP1_A": {
+            "mean": 31.07648679270436,
+            "std": 13.029923233273472,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "AMPS_TARGET_SPS_DEP1_S": {
+            "mean": 0.22685999087960645,
+            "std": 0.33951264951639126,
+            "observed_records": 4152,
+            "missing_fraction": 0.00312124849939976
+        },
+        "DCBIAS_PLATEN_DEP1_A": {
+            "mean": 5.902249665146095,
+            "std": 0.4748190578067862,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "DCBIAS_PLATEN_DEP1_A_MR": {
+            "mean": 0.010423385257164967,
+            "std": 0.16030411778716572,
+            "observed_records": 2829,
+            "missing_fraction": 0.32076830732292916
+        },
+        "DCBIAS_PLATEN_DEP1_I": {
+            "mean": 7.439667990381557,
+            "std": 0.6002870076320865,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "DCBIAS_PLATEN_DEP1_I_MR": {
+            "mean": 0.025310493785628878,
+            "std": 0.386068418603484,
+            "observed_records": 2829,
+            "missing_fraction": 0.32076830732292916
+        },
+        "DCBIAS_PLATEN_DEP1_S": {
+            "mean": 0.7377843392179831,
+            "std": 0.9015802699096632,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "FLOW_CHAMBER_RUN_A": {
+            "mean": 0.7660763672460978,
+            "std": 0.523256544733086,
+            "observed_records": 1965,
+            "missing_fraction": 0.5282112845138055
+        },
+        "FLOW_TARGET_RUN_A": {
+            "mean": 5.850796447155611,
+            "std": 3.9886362137594116,
+            "observed_records": 1965,
+            "missing_fraction": 0.5282112845138055
+        },
+        "GAS1_DEP1_A": {
+            "mean": 2.1900189259853713,
+            "std": 0.00014596717189640918,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "GAS1_DEP1_S": {
+            "mean": 0.002378186810030088,
+            "std": 0.002199458644252233,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "GAS2_DEP1_A": {
+            "mean": 0.20151216330554664,
+            "std": 0.3661437806599626,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "GAS2_DEP1_S": {
+            "mean": 5.943106573502932,
+            "std": 21.444111104207067,
+            "observed_records": 1497,
+            "missing_fraction": 0.6405762304921969
+        },
+        "LIFE_CRYO_RUN_A": {
+            "mean": 104.84474245907917,
+            "std": 97.17308461027079,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "LIFE_CRYO_RUN_S": {
+            "mean": 0.04533018244008738,
+            "std": 0.3441768617019311,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "LIFE_SHIELDING_RUN_A": {
+            "mean": 264.2456774354693,
+            "std": 238.97491724774963,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "LIFE_SHIELDING_RUN_S": {
+            "mean": 0.02638951194201463,
+            "std": 0.24676857238780692,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "LIFE_TARGET_DEP1_A": {
+            "mean": 146.7714037494217,
+            "std": 124.4447970449051,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "LIFE_TARGET_DEP1_A_MR": {
+            "mean": -0.024829199661741783,
+            "std": 5.705236127710489,
+            "observed_records": 4141,
+            "missing_fraction": 0.005762304921968787
+        },
+        "LIFE_TARGET_DEP1_S": {
+            "mean": 0.042149625038235015,
+            "std": 0.30888467503084044,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "LIFE_TARGET_RUN_A": {
+            "mean": 175.80444841963129,
+            "std": 149.0365479627909,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "LIFE_TARGET_RUN_A_MR": {
+            "mean": 0.351322412089882,
+            "std": 3.047410715737958,
+            "observed_records": 4154,
+            "missing_fraction": 0.0026410564225690276
+        },
+        "LIFE_TARGET_RUN_I": {
+            "mean": 362.9622234788365,
+            "std": 288.6104014299509,
+            "observed_records": 982,
+            "missing_fraction": 0.7642256902761104
+        },
+        "LIFE_TARGET_RUN_S": {
+            "mean": 0.03345810402854237,
+            "std": 0.25940200436985866,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "OHM_TARGET_DEP1_A_A": {
+            "mean": 2.6335899491687855,
+            "std": 0.3992184635599105,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "POWER_SPS_DELTA_DEP1_A": {
+            "mean": 1.4278059931395142,
+            "std": 24.446154681392002,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "POWER_TARGET_DEP1_A": {
+            "mean": 16.63032470928991,
+            "std": 0.029746392747689546,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "POWER_TARGET_DEP1_A_MR": {
+            "mean": 0.00045534846988054035,
+            "std": 0.03139794382223724,
+            "observed_records": 4038,
+            "missing_fraction": 0.0304921968787515
+        },
+        "POWER_TARGET_DEP1_R": {
+            "mean": 0.36125370843559657,
+            "std": 0.4731490524092015,
+            "observed_records": 2315,
+            "missing_fraction": 0.44417767106842737
+        },
+        "POWER_TARGET_DEP1_R_ENG": {
+            "mean": 0.015519898501402807,
+            "std": 0.009623293950671559,
+            "observed_records": 2315,
+            "missing_fraction": 0.44417767106842737
+        },
+        "POWER_TARGET_DEP1_S": {
+            "mean": 0.22458070642582417,
+            "std": 0.3013262268161053,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "POWER_TARGET_RUN_A": {
+            "mean": 0.10547799884731723,
+            "std": 0.121827338986912,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "POWER_TARGET_RUN_S": {
+            "mean": 67.78784321116173,
+            "std": 29.368692195441245,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "POWER_TARGET_SPS_DEP1_A": {
+            "mean": 0.15947677507725658,
+            "std": 0.23025339288407798,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_CHAMBER_DEP1_A": {
+            "mean": 0.001059385374286417,
+            "std": 5.439747725524335e-05,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_CHAMBER_DEP1_M": {
+            "mean": 0.0008911762108694114,
+            "std": 4.746170760021106e-05,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_CHAMBER_DEP1_R": {
+            "mean": 0.00016729539397641248,
+            "std": 3.0415835595262426e-05,
+            "observed_records": 1343,
+            "missing_fraction": 0.6775510204081633
+        },
+        "PRESS_CHAMBER_DEP1_S": {
+            "mean": 2.0480286462841786,
+            "std": 0.7458388789097739,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_IONGAUGE_BP_I": {
+            "mean": 7.545880739633042e-09,
+            "std": 8.466533590248542e-09,
+            "observed_records": 4162,
+            "missing_fraction": 0.0007202881152460984
+        },
+        "PRESS_IONGAUGE_BP_I_ENG": {
+            "mean": 9.241033938743356e-09,
+            "std": 1.0280796859454554e-08,
+            "observed_records": 2479,
+            "missing_fraction": 0.40480192076830734
+        },
+        "PRESS_IONGAUGE_BP_I_ENG1": {
+            "mean": 2.415670677019325e-09,
+            "std": 2.7381824357867054e-09,
+            "observed_records": 1532,
+            "missing_fraction": 0.632172869147659
+        },
+        "PRESS_IONGAUGE_RUN_A": {
+            "mean": 1.1655685525718305e-05,
+            "std": 1.4070294139579266e-05,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_IONGAUGE_RUN_I": {
+            "mean": 6.6282518126475964e-09,
+            "std": 4.503261682498077e-09,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_IONGAUGE_RUN_S": {
+            "mean": 135.69516645787897,
+            "std": 59.172305778739236,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_PUMP2BASE_I": {
+            "mean": 8.821529963825918e-09,
+            "std": 9.65520540860945e-09,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_TRANSFER_RUN_I": {
+            "mean": -0.00045915251182137245,
+            "std": 0.013244863510758077,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "PRESS_TRANSFER_RUN_X": {
+            "mean": 0.3369809455192741,
+            "std": 8.725775101863851,
+            "observed_records": 1343,
+            "missing_fraction": 0.6775510204081633
+        },
+        "PROCESS_STATE_RUN_X": {
+            "mean": 0.6434368131507213,
+            "std": 0.2579543840463157,
+            "observed_records": 1534,
+            "missing_fraction": 0.6316926770708283
+        },
+        "RGA_FUNCTION_DAY": {
+            "mean": 12580.144748670948,
+            "std": 83.99526961795829,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "SPEED_CRYO_RUN_A": {
+            "mean": 6.085757751329607,
+            "std": 1.059888218566195,
+            "observed_records": 3624,
+            "missing_fraction": 0.1298919567827131
+        },
+        "SPEED_CRYO_RUN_S": {
+            "mean": 0.02740791036225351,
+            "std": 0.06982996342333445,
+            "observed_records": 3624,
+            "missing_fraction": 0.1298919567827131
+        },
+        "SPEED_MAGNETRON_DEP1_A": {
+            "mean": 10.9789530670732,
+            "std": 0.014870802913289445,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "SPEED_MAGNETRON_DEP1_S": {
+            "mean": 0.0363119338518033,
+            "std": 0.008800376578405976,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_CRYOFIRSTSTAGE_RUN_X": {
+            "mean": 20.052478895907637,
+            "std": 1.3995379512867023,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_CRYOSECONDSTAGE_RUN_X": {
+            "mean": 4.326743336534748,
+            "std": 0.5455956960983875,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_PLATEN_DEP1_A": {
+            "mean": 39.7966249539589,
+            "std": 0.05523966200479106,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_PLATEN_DEP1_S": {
+            "mean": 0.0015182443440069613,
+            "std": 0.000425442966868137,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_PLATEN_DEP1_X": {
+            "mean": 47.90940164108327,
+            "std": 0.06646564136881528,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_PLATEN_DIFF_SAFETY_A": {
+            "mean": 0.8127470325146086,
+            "std": 0.25142705129966514,
+            "observed_records": 2170,
+            "missing_fraction": 0.4789915966386555
+        },
+        "TEMP_PLATEN_RUN_A": {
+            "mean": 112.45781826727885,
+            "std": 0.6636049684374176,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_PLATEN_RUN_R": {
+            "mean": 0.4196632314269807,
+            "std": 2.3348610520157274,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_PLATEN_RUN_S": {
+            "mean": 0.029078964746420754,
+            "std": 0.18546313928185423,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TEMP_PLATEN_SAFETY_RUN_A": {
+            "mean": 111.03356688507975,
+            "std": 0.8548882369725154,
+            "observed_records": 2170,
+            "missing_fraction": 0.4789915966386555
+        },
+        "TEMP_PLATEN_SAFETY_RUN_S": {
+            "mean": 0.016033870970353366,
+            "std": 0.07878453166316521,
+            "observed_records": 2170,
+            "missing_fraction": 0.4789915966386555
+        },
+        "TIME_POST_PROCESS_X": {
+            "mean": 1196.3690977534409,
+            "std": 1047.6047342306724,
+            "observed_records": 3955,
+            "missing_fraction": 0.05042016806722689
+        },
+        "TIME_PREV_DIFF_I": {
+            "mean": 0.01953703431529912,
+            "std": 0.028635908188370276,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TIME_PREV_DIFF_X": {
+            "mean": 0.033909561435156325,
+            "std": 0.31539377491879234,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "TIME_PRE_PROCESS_X": {
+            "mean": 0.7630747932958765,
+            "std": 0.5334192371469909,
+            "observed_records": 3955,
+            "missing_fraction": 0.05042016806722689
+        },
+        "T_DEP1_PROCESS": {
+            "mean": 18.2945049987951,
+            "std": 1.5911900296063113,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "T_DEP1_PROCESS_MR": {
+            "mean": -2.403875291884726,
+            "std": 7.6303074247323135,
+            "observed_records": 4095,
+            "missing_fraction": 0.01680672268907563
+        },
+        "T_LL_DEGAS_ST1": {
+            "mean": 236.30026195844755,
+            "std": 204.5676701863069,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "T_LL_DEGAS_ST1_MR": {
+            "mean": 58.451553346210225,
+            "std": 941.1012572385166,
+            "observed_records": 4098,
+            "missing_fraction": 0.016086434573829533
+        },
+        "T_RECIPE": {
+            "mean": 1.252211904749916,
+            "std": 0.9016911613500969,
+            "observed_records": 3955,
+            "missing_fraction": 0.05042016806722689
+        },
+        "T_RECIPE_ENG": {
+            "mean": 26.817886640434864,
+            "std": 7.489866038936147,
+            "observed_records": 3959,
+            "missing_fraction": 0.049459783913565425
+        },
+        "T_RUN": {
+            "mean": 653.7247057841422,
+            "std": 565.9346439465804,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "T_RUN_ENG": {
+            "mean": 538.3980568715256,
+            "std": 472.1072385981527,
+            "observed_records": 1328,
+            "missing_fraction": 0.6811524609843937
+        },
+        "T_RUN_PRE1": {
+            "mean": 0.8924051169818203,
+            "std": 0.23885559939685586,
+            "observed_records": 3968,
+            "missing_fraction": 0.047298919567827134
+        },
+        "T_RUN_PRE2": {
+            "mean": 3.10831250041176,
+            "std": 3.723138526234107,
+            "observed_records": 3945,
+            "missing_fraction": 0.05282112845138055
+        },
+        "T_RUN_PRE_PROCESS": {
+            "mean": 3.0078009935649526,
+            "std": 2.353348445115845,
+            "observed_records": 3271,
+            "missing_fraction": 0.21464585834333733
+        },
+        "UTILISATION_TARGET_RUN_A": {
+            "mean": 1.6196985643862765,
+            "std": 1.3706513274964898,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "UTILISATION_TARGET_RUN_S": {
+            "mean": 0.004741633320656575,
+            "std": 0.036762060963443796,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "VOLTS_TARGET_DEP1_5SEC_S": {
+            "mean": 1.248954638737213,
+            "std": 1.7162179400049333,
+            "observed_records": 1826,
+            "missing_fraction": 0.5615846338535414
+        },
+        "VOLTS_TARGET_DEP1_A": {
+            "mean": 248.59288636817465,
+            "std": 18.625744883120795,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "VOLTS_TARGET_DEP1_G": {
+            "mean": 0.2220996403176614,
+            "std": 0.25932928914923653,
+            "observed_records": 632,
+            "missing_fraction": 0.8482593037214886
+        },
+        "VOLTS_TARGET_DEP1_R": {
+            "mean": 2.6364284248680354,
+            "std": 3.0588587957765063,
+            "observed_records": 3265,
+            "missing_fraction": 0.21608643457382953
+        },
+        "VOLTS_TARGET_DEP1_S": {
+            "mean": 0.49896096025278003,
+            "std": 0.47195524754500734,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "VOLTS_TARGET_RE_A": {
+            "mean": 132.46499940899548,
+            "std": 41.47148648487836,
+            "observed_records": 4120,
+            "missing_fraction": 0.010804321728691477
+        },
+        "VOLTS_TARGET_RUN_A": {
+            "mean": 120.16108530364261,
+            "std": 40.69471129746856,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "VOLTS_TARGET_RUN_S": {
+            "mean": 131.29463903069984,
+            "std": 45.690238402919576,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "VOLTS_TARGET_SPS_DEP1_A": {
+            "mean": 75.1826850535698,
+            "std": 15.456441317797912,
+            "observed_records": 4165,
+            "missing_fraction": 0.0
+        },
+        "WAFERCOUNT_MR": {
+            "mean": 13.859915877898523,
+            "std": 9.136942063673663,
+            "observed_records": 960,
+            "missing_fraction": 0.7695078031212484
+        },
+        "WAFERCOUNT_RECIPE_MR": {
+            "mean": 0.8783307354603095,
+            "std": 0.1018072502295099,
+            "observed_records": 595,
+            "missing_fraction": 0.8571428571428571
+        }
+    },
+    "training_missing_count_p95": 30.0,
+    "training_missing_count_maximum": 37,
+    "known_equipment": [
+        "equipment_1",
+        "equipment_10",
+        "equipment_11",
+        "equipment_12",
+        "equipment_13",
+        "equipment_14",
+        "equipment_15",
+        "equipment_16",
+        "equipment_2",
+        "equipment_3",
+        "equipment_4",
+        "equipment_5",
+        "equipment_6",
+        "equipment_7",
+        "equipment_8",
+        "equipment_9"
+    ],
+    "warning_type": "Training-distribution heuristic; not calibrated uncertainty"
+}
